@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BSI Square - Univ.Bhayangkara</string>
+
+    <string-array name="spinner_item_1">
+        <item>BSI Square</item>
+        <item>BSI Cut Meutia</item>
+        <item>Univ. Bhayangkara</item>
+        <item>Univ. Gunadarma</item>
+        <item>STMIK Bani Shaleh</item>
+        <item>Stasiun Bekasi</item>
+    </string-array>
+
+    <string-array name="spinner_item_2">
+        <item>BSI Square</item>
+        <item>BSI Cut Meutia</item>
+        <item>Univ. Bhayangkara</item>
+        <item>Univ. Gunadarma</item>
+        <item>STMIK Bani Shaleh</item>
+        <item>Stasiun Bekasi</item>
+    </string-array>
+    <string name="title_activity_beranda">Angkot Kampus Bekasi</string>
+    <string name="title_activity_st_square">ST. Bekasi - BSI Square</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Tentang</string>
+
+
+</resources>
