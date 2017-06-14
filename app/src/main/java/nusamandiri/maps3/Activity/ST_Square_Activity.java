@@ -3,10 +3,14 @@ package nusamandiri.maps3.Activity;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akexorcist.googledirection.DirectionCallback;
@@ -25,6 +29,7 @@ import nusamandiri.maps3.R;
 
 public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
 
+    private TextView mTextMessage;
     GoogleMap mGoogleMap;
     private String serverKey = "AIzaSyBk8bt23ytMHcsc5cTCT7b6UmWYqjhseTQ";
     private LatLng camera = new LatLng(-6.220068, 107.005191);
@@ -42,6 +47,10 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_st__square_);
         initMap();
+
+        mTextMessage = (TextView) findViewById(R.id.message);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -97,6 +106,8 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
         );
     }
 
+
+
     @Override
     public void onClick(View v) {
 
@@ -111,4 +122,34 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
     public void onDirectionFailure(Throwable t) {
 
     }
+
+
+
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_home:
+                    mTextMessage.setText(R.string.title_home);
+                    return true;
+                case R.id.navigation_dashboard:
+                    mTextMessage.setText(R.string.title_dashboard);
+                    return true;
+                case R.id.navigation_notifications:
+                    mTextMessage.setText(R.string.title_notifications);
+                    return true;
+                case R.id.navigation_jalan:
+                    mTextMessage.setText(R.string.title_jalan);
+                    return true;
+            }
+            return false;
+        }
+
+    };
+
+
+
 }
