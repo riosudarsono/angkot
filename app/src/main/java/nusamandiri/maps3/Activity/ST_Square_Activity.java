@@ -27,7 +27,15 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
     GoogleMap mGoogleMap;
     private String serverKey = "AIzaSyBk8bt23ytMHcsc5cTCT7b6UmWYqjhseTQ";
-    private LatLng camera = new LatLng(-6.214973, 107.012137);
+    private LatLng camera = new LatLng(-6.220068, 107.005191);
+
+    private LatLng origin1 = new LatLng(-6.236101, 107.000380);
+    private LatLng destination1 = new LatLng(-6.203150, 107.002980);
+
+    private LatLng origin2 = new LatLng(-6.227078, 107.005963);
+    private LatLng destination2 = new LatLng(-6.203150, 107.002980);
+
+    private LatLng origin4 = new LatLng(-6.224458, 107.009488);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,19 +81,19 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
             return;
         }
         mGoogleMap.setMyLocationEnabled(true);
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 15));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
 
-        LatLng kampus1 = new LatLng(-6.206071, 107.015447);
+        LatLng stasiun = new LatLng(-6.236722, 106.999387);
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(kampus1)
+                .position(stasiun)
                 .title("BSI Square")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_stasiun))
         );
-        LatLng kampus2 = new LatLng(-6.223585, 107.008962);
+        LatLng kampus = new LatLng(-6.206071, 107.015447);
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(kampus2)
+                .position(kampus)
                 .title("Universitas Bhayangkara")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_stasiun))
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_kampus))
         );
     }
 

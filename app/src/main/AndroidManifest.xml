@@ -26,7 +26,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Activity.MainActivity"
-            android:parentActivityName=".Activity.BerandaActivity"></activity>
+            android:parentActivityName=".Activity.BerandaActivity" />
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
@@ -48,9 +48,13 @@
         <activity
             android:name=".Activity.ST_Square_Activity"
             android:label="@string/title_activity_st_square"
-            android:parentActivityName=".Activity.BerandaActivity">
-
-        </activity>
+            android:parentActivityName=".Activity.BerandaActivity" />
+        <activity
+            android:name=".Activity.ST_Kara_Activity"
+            android:label="@string/title_activity_st__kara_" />
+        <activity
+            android:name=".Activity.ST_Shaleh_Activity"
+            android:label="@string/title_activity_st__shaleh_"></activity>
     </application>
 
 </manifest>

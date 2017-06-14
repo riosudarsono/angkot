@@ -33,7 +33,7 @@
         android:id="@+id/btn_angkot2_SK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Angkot K15"
+        android:text="Angkot 15A"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="3dp"
         android:background="@drawable/bg_button"
