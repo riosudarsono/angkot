@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BSI Square - Univ.Bhayangkara</string>
 
-    <string-array name="spinner_item_1">
+    <string-array name="spinner_item_3">
         <item>BSI Square</item>
         <item>BSI Cut Meutia</item>
         <item>Univ. Bhayangkara</item>
@@ -10,7 +10,7 @@
         <item>Stasiun Bekasi</item>
     </string-array>
 
-    <string-array name="spinner_item_2">
+    <string-array name="spinner_item_4">
         <item>BSI Square</item>
         <item>BSI Cut Meutia</item>
         <item>Univ. Bhayangkara</item>
