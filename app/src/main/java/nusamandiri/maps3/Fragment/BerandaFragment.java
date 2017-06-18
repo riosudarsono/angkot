@@ -21,24 +21,33 @@ import nusamandiri.maps3.R;
 public class BerandaFragment extends Fragment {
 
 
+    Object s3 ="3";
+    Object s4 ="4";
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.fr_beranda, container, false);
 
-        MaterialSpinner spinner = (MaterialSpinner) fragmentView.findViewById(R.id.spinner3);
+        final MaterialSpinner spinner = (MaterialSpinner) fragmentView.findViewById(R.id.spinner3);
         spinner.setItems("Pilih Kampus Pertama", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "STMIK Bani Shaleh", "Stasiun Bekasi");
         spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+
+
+                s3 = item.toString();
                 Snackbar.make(view, item + " Telah Dipilih", Snackbar.LENGTH_LONG).show();
+
             }
         });
-        MaterialSpinner spinner1 = (MaterialSpinner) fragmentView.findViewById(R.id.spinner4);
+        final MaterialSpinner spinner1 = (MaterialSpinner) fragmentView.findViewById(R.id.spinner4);
         spinner1.setItems("Pilih Kampus Kedua", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "STMIK Bani Shaleh", "Stasiun Bekasi");
         spinner1.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+
+                s4 = item.toString();
                 Snackbar.make(view, item + " Telah Dipilih", Snackbar.LENGTH_LONG).show();
             }
         });
@@ -48,9 +57,26 @@ public class BerandaFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent MainActivity
-                        = new Intent(getActivity(), nusamandiri.maps3.Activity.MainActivity.class);
-                startActivity(MainActivity);
+                if (view.getId() == R.id.btn_carirute) {
+                    if (s3.equals("BSI Square") && s4.equals("Universitas Bhayangkara")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), nusamandiri.maps3.Activity.MainActivity.class);
+                        startActivity(MainActivity);
+
+                    }  else if (s3.equals("3") && s4.equals("4")) {
+
+                        Snackbar.make(view, "Silakan Pilih Tujuan", Snackbar.LENGTH_LONG).show();
+
+                    } else {
+
+                        Snackbar.make(view, "Tujuan Tidak Boleh Sama", Snackbar.LENGTH_LONG).show();
+                    }
+
+                }
+                else {
+                    Snackbar.make(view, " Telah Dipilih", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
 
