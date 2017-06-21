@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BSI Square - Univ.Bhayangkara</string>
+    <string name="app_name">Angkot Kampus Bekasi</string>
 
     <string-array name="spinner_item_3">
         <item>BSI Square</item>

@@ -14,7 +14,8 @@
         android:id="@+id/mapFragment"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
 
     <Button
@@ -63,8 +64,6 @@
 
         android:layout_toRightOf="@id/btn_angkot3_SK"
         android:layout_below="@id/btn_angkot2_SK"/>
-
-
 
 
 
