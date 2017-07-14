@@ -94,15 +94,7 @@ public class BerandaActivity extends AppCompatActivity
             startActivity(intent);
             return true;
 
-        } else if (id == R.id.nav_manage) {
-            Intent intent = new Intent(this, ST_Square_Activity.class);
-            startActivity(intent);
-            return true;
 
-        } else if (id == R.id.nav_share) {
-            Intent intent = new Intent(this, ST_Kara_Activity.class);
-            startActivity(intent);
-            return true;
 
         } else if (id == R.id.nav_send) {
             Intent intent = new Intent(this, ST_Shaleh_Activity.class);
