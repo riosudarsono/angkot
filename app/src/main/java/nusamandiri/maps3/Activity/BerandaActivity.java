@@ -1,13 +1,19 @@
 package nusamandiri.maps3.Activity;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -20,6 +26,8 @@ import nusamandiri.maps3.R;
 public class BerandaActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    boolean gps_enabled = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +47,9 @@ public class BerandaActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         loadFragmentt(new BerandaFragment());
+        if(!isLocationEnabled()) {
+            displayPromptForEnablingGPS(this);
+        }
     }
 
 
@@ -117,4 +128,39 @@ public class BerandaActivity extends AppCompatActivity
         fragmentTransaction.commit();
     }
 
+
+    public static void displayPromptForEnablingGPS(final Activity activity)
+    {
+
+        final AlertDialog.Builder builder =  new AlertDialog.Builder(activity);
+        final String action = Settings.ACTION_LOCATION_SOURCE_SETTINGS;
+        final String message = "Aktifkan GPS.?";
+
+        builder.setMessage(message)
+                .setPositiveButton("Iya",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface d, int id) {
+                                activity.startActivity(new Intent(action));
+                                d.dismiss();
+                            }
+                        })
+                .setNegativeButton("Batal",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface d, int id) {
+                                d.cancel();
+                            }
+                        });
+        builder.create().show();
+    }
+
+
+    protected boolean isLocationEnabled(){
+        String le = Context.LOCATION_SERVICE;
+        LocationManager locationManager = (LocationManager) getSystemService(le);
+        if(!locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
