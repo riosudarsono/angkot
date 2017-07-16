@@ -12,7 +12,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioButton;
 
 import nusamandiri.maps3.R;
 
@@ -34,13 +33,15 @@ public class RecyclerViewFragment extends Fragment {
 
     protected LayoutManagerType mCurrentLayoutManagerType;
 
-    protected RadioButton mLinearLayoutRadioButton;
-    protected RadioButton mGridLayoutRadioButton;
-
     protected RecyclerView mRecyclerView;
     protected CustomAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
-    protected String[] mDataset;
+    protected String[] mDataset, mDataset2;
+    protected int[] mDataset3;
+
+    int[] icon_item={R.drawable.icon_angkot, R.drawable.icon_jalan, R.drawable.icon_stasiun};
+    String[] judul={"Angkot","Jalan","Stasiun"};
+    String[] isi={"isi deskripsi adalah angkot","isi deskripsi adalah angkot","isi deskripsi adalah angkot"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ public class RecyclerViewFragment extends Fragment {
         }
         setRecyclerViewLayoutManager(mCurrentLayoutManagerType);
 
-        mAdapter = new CustomAdapter(mDataset);
+        mAdapter = new CustomAdapter(mDataset,mDataset2,mDataset3);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
         // END_INCLUDE(initializeRecyclerView)
@@ -128,9 +129,14 @@ public class RecyclerViewFragment extends Fragment {
      * from a local content provider or remote server.
      */
     private void initDataset() {
-        mDataset = new String[DATASET_COUNT];
-        for (int i = 0; i < DATASET_COUNT; i++) {
-            mDataset[i] = "Hello nonor saya adalah "+i;
+        mDataset = new String[judul.length];
+        mDataset2 = new String[isi.length];
+        mDataset3 = new int[icon_item.length];
+
+        for (int i = 0; i < judul.length; i++) {
+            mDataset[i] = judul[i];
+            mDataset2[i] = isi[i];
+            mDataset3[i] = icon_item[i];
         }
     }
 }

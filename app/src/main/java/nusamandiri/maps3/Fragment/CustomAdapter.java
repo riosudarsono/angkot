@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import nusamandiri.maps3.R;
@@ -20,14 +21,16 @@ import nusamandiri.maps3.R;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     private static final String TAG = "CustomAdapter";
 
-    private String[] mDataSet;
+    private String[] mDataSet,mDataset2;
+    private int[] mDataset3;
 
     // BEGIN_INCLUDE(recyclerViewSampleViewHolder)
     /**
      * Provide a reference to the type of views that you are using (custom ViewHolder)
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+        private final TextView textView, textView2;
+        private final ImageView icon_item;
 
         public ViewHolder(View v) {
             super(v);
@@ -38,11 +41,21 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                     Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
                 }
             });
-            textView = (TextView) v.findViewById(R.id.textView);
+            textView = (TextView) v.findViewById(R.id.judul);
+            textView2 = (TextView) v.findViewById(R.id.isi);
+            icon_item = (ImageView) v.findViewById(R.id.icon_item);
         }
 
         public TextView getTextView() {
             return textView;
+        }
+
+        public TextView getTextView2() {
+            return textView2;
+        }
+
+        public ImageView getImageView() {
+            return icon_item;
         }
     }
     // END_INCLUDE(recyclerViewSampleViewHolder)
@@ -52,8 +65,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
      *
      * @param dataSet String[] containing the data to populate views to be used by RecyclerView.
      */
-    public CustomAdapter(String[] dataSet) {
-        mDataSet = dataSet;
+    public CustomAdapter(String[] dataSet, String[] dataset2,int[] dataset3) {
+        this.mDataSet = dataSet;
+        this.mDataset2 = dataset2;
+        this.mDataset3 = dataset3;
     }
 
     // BEGIN_INCLUDE(recyclerViewOnCreateViewHolder)
@@ -77,6 +92,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
         viewHolder.getTextView().setText(mDataSet[position]);
+        viewHolder.getTextView2().setText(mDataset2[position]);
+        viewHolder.getImageView().setImageResource(mDataset3[position]);
     }
     // END_INCLUDE(recyclerViewOnBindViewHolder)
 
