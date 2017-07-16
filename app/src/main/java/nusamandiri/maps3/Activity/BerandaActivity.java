@@ -21,6 +21,7 @@ import android.view.MenuItem;
 
 import nusamandiri.maps3.Fragment.BerandaFragment;
 import nusamandiri.maps3.Fragment.InfoKampusFragment;
+import nusamandiri.maps3.Fragment.RecyclerViewFragment;
 import nusamandiri.maps3.R;
 
 public class BerandaActivity extends AppCompatActivity
@@ -101,9 +102,8 @@ public class BerandaActivity extends AppCompatActivity
             loadFragmentt(new InfoKampusFragment());
 
         } else if (id == R.id.nav_slideshow) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            return true;
+            loadFragmentt(new RecyclerViewFragment());
+
 
 
 
