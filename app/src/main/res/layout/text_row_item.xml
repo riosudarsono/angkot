@@ -23,18 +23,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorWhite"
+        android:background="@drawable/bg_item"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp">
 
-    <View
-        android:id="@+id/garis"
-        android:layout_height="2dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/icon"
-        android:background="@color/colorPrimary"/>
 
      <ImageView
          android:id="@+id/icon_item"
@@ -60,13 +53,7 @@
         android:layout_below="@id/judul"
         android:text="@string/isi"/>
 
-    <View
-        android:id="@+id/garis"
-        android:layout_height="2dp"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/isi"
-        android:background="@color/colorPrimary"/>
+
     </RelativeLayout>
 
 </FrameLayout>
