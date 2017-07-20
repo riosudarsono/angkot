@@ -166,14 +166,16 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
                     return true;
                 case R.id.navigation_angkot15a:
                     mTextMessage.setText("ST. Bekasi => POM Bensin Permata \n Rp. 5.000");
+                    requestDirection1();
                     return true;
                 case R.id.navigation_angkot45:
                     mTextMessage.setText("BSI Square => POM Bensin Permata \n Rp 3.000");
-                    requestDirection1();
+                    requestDirection2();
                     return true;
                 case R.id.navigation_transit:
                     mTextMessage.setText("Dari Angkot 15A ke Angkot 45" +
                             "\nDari Angkot 45   ke Angkot 15A");
+                    requestDirection3();
                     return true;
             }
             return false;
@@ -202,7 +204,7 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin2)
                 .title("Angkot 15A")
-                .snippet("depan Stasiun Bekasi
+                .snippet("depan Stasiun Bekasi")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
 
@@ -211,12 +213,12 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
     }
 
-    public void requestDirection2() {
+    public void requestDirection3() {
 
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin2)
                 .title("Angkot 15A")
-                .snippet("depan Stasiun Bekasi
+                .snippet("depan Stasiun Bekasi")
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
                 );
 
