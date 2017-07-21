@@ -84,6 +84,27 @@ public class BerandaFragment extends Fragment {
                             startActivity(MainActivity);
 
                     }
+                    else if (s3.equals("Universitas Bhayangkara") && s4.equals("BSI Square")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), nusamandiri.maps3.Activity.MainActivity.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Stasiun Bekasi") && s4.equals("Universitas Bhayangkara")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), nusamandiri.maps3.Activity.ST_Kara_Activity.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Bhayangkara") && s4.equals("Stasiun Bekasi")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), nusamandiri.maps3.Activity.ST_Kara_Activity.class);
+                        startActivity(MainActivity);
+
+                    }
                     else {
 
                         Snackbar.make(view, "Tujuan Tidak Boleh Sama", Snackbar.LENGTH_LONG).show();

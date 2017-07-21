@@ -26,6 +26,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Activity.MainActivity"
+            android:label="BSI Square - UBHARA"
             android:parentActivityName=".Activity.BerandaActivity" />
 
         <meta-data
@@ -51,7 +52,8 @@
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.ST_Kara_Activity"
-            android:label="@string/title_activity_st__kara_" />
+            android:label="@string/title_activity_st__kara_"
+            android:parentActivityName=".Activity.BerandaActivity"/>
     </application>
 
 </manifest>
