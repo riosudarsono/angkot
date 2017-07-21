@@ -60,7 +60,7 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
         super.onCreate(savedInstanceState);
         if (googleServiceAvailable()) {
             Toast.makeText(this, "Berhasil", Toast.LENGTH_LONG).show();
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_square__ubhara);
             initMap();
         } else {
             Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();

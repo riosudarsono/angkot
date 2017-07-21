@@ -54,7 +54,7 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
         super.onCreate(savedInstanceState);
         if (googleServiceAvailable()) {
             Toast.makeText(this, "Berhasil", Toast.LENGTH_LONG).show();
-            setContentView(R.layout.activity_stasiun__square_);
+            setContentView(R.layout.activity_stasiun__square);
             initMap();
         } else {
             Toast.makeText(this, "MAPS Gagal Dimuat", Toast.LENGTH_LONG).show();//Tidak ada google maps layout

@@ -53,7 +53,7 @@ public class Stasiun_Ubhara extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stasiun__ubhara_);
+        setContentView(R.layout.activity_stasiun__ubhara);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

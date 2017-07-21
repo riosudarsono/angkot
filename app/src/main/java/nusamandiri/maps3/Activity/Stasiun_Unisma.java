@@ -10,6 +10,6 @@ public class Stasiun_Unisma extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stasiun_unisma);
+        setContentView(R.layout.activity_stasiun__unisma);
     }
 }
