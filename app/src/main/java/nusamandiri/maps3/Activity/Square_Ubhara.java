@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
 import com.akexorcist.googledirection.constant.TransportMode;
@@ -29,17 +28,18 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-
 import java.util.ArrayList;
-
 import nusamandiri.maps3.R;
 
 public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
+
     private Button btn_angkot1_sk;
     private Button btn_angkot2_sk;
     private Button btn_angkot3_sk;
     private Button btn_angkot4_sk;
+
     private TextView mTextMessage;
+
     GoogleMap mGoogleMap;
     Polyline line;
 
@@ -48,12 +48,14 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
 
     private LatLng origin1 = new LatLng(-6.206557, 107.015281);
     private LatLng destination1 = new LatLng(-6.203150, 107.002980);
+    //BSI Square - POM Bensin Permata
 
     private LatLng origin2 = new LatLng(-6.227078, 107.005963);
     private LatLng destination2 = new LatLng(-6.203150, 107.002980);
+    //Bundaran Summarecon - POM Bensin Permata
 
     private LatLng origin4 = new LatLng(-6.224458, 107.009488);
-
+    //Universitas Bhayangkara
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,9 +105,7 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         mGoogleMap = googleMap;
-
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -125,6 +125,7 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
                 .title("BSI Square")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_kampus))
         );
+
         LatLng kampus2 = new LatLng(-6.223585, 107.008962);
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(kampus2)
@@ -142,7 +143,6 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
         if (id == R.id.btn_angkot1_SK) {
             mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
             requestDirection1();
-
         }
         else if (id == R.id.btn_angkot2_SK){
             requestDirection2();
@@ -158,9 +158,6 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
         }
     }
 
-
-
-
     public void requestDirection1() {
         Snackbar.make(btn_angkot1_sk, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
         GoogleDirection.withServerKey(serverKey)
@@ -175,10 +172,7 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
                 .snippet("depan BSI Square")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
-
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin1, 15));
-
-
     }
 
     public void requestDirection2() {
@@ -235,12 +229,11 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
         Snackbar.make(btn_angkot2_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         Snackbar.make(btn_angkot3_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         Snackbar.make(btn_angkot4_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
-        if (direction.isOK()) {
 
+        if (direction.isOK()) {
 
             ArrayList<LatLng> directionPositionList = direction.getRouteList().get(0).getLegList().get(0).getDirectionPoint();
             mGoogleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
-
         }
     }
 
@@ -248,9 +241,5 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
     public void onDirectionFailure(Throwable t) {
         Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
     }
-
-
-
-
 
 }
