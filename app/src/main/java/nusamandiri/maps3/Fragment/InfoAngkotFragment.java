@@ -19,9 +19,9 @@ import nusamandiri.maps3.R;
  * Demonstrates the use of {@link RecyclerView} with a {@link LinearLayoutManager} and a
  * {@link GridLayoutManager}.
  */
-public class RecyclerViewFragment extends Fragment {
+public class InfoAngkotFragment extends Fragment {
 
-    private static final String TAG = "RecyclerViewFragment";
+    private static final String TAG = "InfoAngkotFragment";
     private static final String KEY_LAYOUT_MANAGER = "layoutManager";
     private static final int SPAN_COUNT = 2;
 
@@ -34,7 +34,7 @@ public class RecyclerViewFragment extends Fragment {
     protected LayoutManagerType mCurrentLayoutManagerType;
 
     protected RecyclerView mRecyclerView;
-    protected CustomAdapter mAdapter;
+    protected AngkotAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected String[] mDataset, mDataset2;
     protected int[] mDataset3;
@@ -75,8 +75,8 @@ public class RecyclerViewFragment extends Fragment {
         }
         setRecyclerViewLayoutManager(mCurrentLayoutManagerType);
 
-        mAdapter = new CustomAdapter(mDataset,mDataset2,mDataset3);
-        // Set CustomAdapter as the adapter for RecyclerView.
+        mAdapter = new AngkotAdapter(mDataset,mDataset2,mDataset3);
+        // Set AngkotAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
         // END_INCLUDE(initializeRecyclerView)
 

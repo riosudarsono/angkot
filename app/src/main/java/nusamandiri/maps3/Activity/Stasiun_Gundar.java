@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import nusamandiri.maps3.R;
 
-public class ST_Unisma extends AppCompatActivity {
+public class Stasiun_Gundar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_st__unisma);
+        setContentView(R.layout.activity_stasiun__gundar);
     }
 }

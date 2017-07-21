@@ -47,17 +47,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.ST_Square"
+            android:name=".Activity.Stasiun_Square"
             android:label="@string/title_activity_st_square"
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
-            android:name=".Activity.ST_Ubhara"
+            android:name=".Activity.Stasiun_Ubhara"
             android:label="@string/title_activity_st__kara_"
             android:parentActivityName=".Activity.BerandaActivity" />
-        <activity android:name=".Activity.ST_Unisma" />
-        <activity android:name=".Activity.ST_Gundar" />
-        <activity android:name=".Activity.ST_Meutia" />
-        <activity android:name=".Activity.ST_Terminal" />
+        <activity android:name=".Activity.Stasiun_Unisma" />
+        <activity android:name=".Activity.Stasiun_Gundar" />
+        <activity android:name=".Activity.Stasiun_Meutia" />
+        <activity android:name=".Activity.Stasiun_Terminal" />
         <activity android:name=".Activity.Terminal_Square" />
         <activity android:name=".Activity.Terminal_Ubhara"></activity>
     </application>

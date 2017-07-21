@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import nusamandiri.maps3.R;
 
-public class ST_Square extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
+public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
 
     private TextView mTextMessage;
     GoogleMap mGoogleMap;
@@ -54,7 +54,7 @@ public class ST_Square extends AppCompatActivity implements OnMapReadyCallback, 
         super.onCreate(savedInstanceState);
         if (googleServiceAvailable()) {
             Toast.makeText(this, "Berhasil", Toast.LENGTH_LONG).show();
-            setContentView(R.layout.activity_st__square_);
+            setContentView(R.layout.activity_stasiun__square_);
             initMap();
         } else {
             Toast.makeText(this, "MAPS Gagal Dimuat", Toast.LENGTH_LONG).show();//Tidak ada google maps layout

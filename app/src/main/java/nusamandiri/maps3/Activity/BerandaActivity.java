@@ -21,7 +21,7 @@ import android.view.MenuItem;
 
 import nusamandiri.maps3.Fragment.BerandaFragment;
 import nusamandiri.maps3.Fragment.InfoKampusFragment;
-import nusamandiri.maps3.Fragment.RecyclerViewFragment;
+import nusamandiri.maps3.Fragment.InfoAngkotFragment;
 import nusamandiri.maps3.R;
 
 public class BerandaActivity extends AppCompatActivity
@@ -102,13 +102,13 @@ public class BerandaActivity extends AppCompatActivity
             loadFragmentt(new InfoKampusFragment());
 
         } else if (id == R.id.nav_slideshow) {
-            loadFragmentt(new RecyclerViewFragment());
+            loadFragmentt(new InfoAngkotFragment());
 
 
 
 
         } else if (id == R.id.nav_send) {
-            Intent intent = new Intent(this, ST_Square.class);
+            Intent intent = new Intent(this, Stasiun_Square.class);
             startActivity(intent);
             return true;
 

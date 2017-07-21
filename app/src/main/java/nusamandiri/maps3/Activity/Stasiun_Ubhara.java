@@ -14,7 +14,7 @@ import com.google.android.gms.maps.GoogleMap;
 
 import nusamandiri.maps3.R;
 
-public class ST_Ubhara extends AppCompatActivity {
+public class Stasiun_Ubhara extends AppCompatActivity {
 
 
     GoogleMap mGoogleMap;
@@ -53,7 +53,7 @@ public class ST_Ubhara extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_st__kara_);
+        setContentView(R.layout.activity_stasiun__kara_);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

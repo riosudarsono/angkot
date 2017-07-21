@@ -12,8 +12,8 @@ import android.widget.Button;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import nusamandiri.maps3.Activity.ST_Ubhara;
-import nusamandiri.maps3.Activity.ST_Square;
+import nusamandiri.maps3.Activity.Stasiun_Ubhara;
+import nusamandiri.maps3.Activity.Stasiun_Square;
 import nusamandiri.maps3.Activity.Square_Ubhara;
 import nusamandiri.maps3.R;
 
@@ -69,14 +69,14 @@ public class BerandaFragment extends Fragment {
                     else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Square")) {
 
                         Intent MainActivity
-                                = new Intent(getActivity(), ST_Square.class);
+                                = new Intent(getActivity(), Stasiun_Square.class);
                         startActivity(MainActivity);
 
                     }
                     else if (s3.equals("BSI Square") && s4.equals("Stasiun Bekasi")) {
 
                         Intent MainActivity
-                                = new Intent(getActivity(), ST_Square.class);
+                                = new Intent(getActivity(), Stasiun_Square.class);
                         startActivity(MainActivity);
 
                     }
@@ -97,14 +97,14 @@ public class BerandaFragment extends Fragment {
                     else if (s3.equals("Stasiun Bekasi") && s4.equals("Universitas Bhayangkara")) {
 
                         Intent MainActivity
-                                = new Intent(getActivity(), ST_Ubhara.class);
+                                = new Intent(getActivity(), Stasiun_Ubhara.class);
                         startActivity(MainActivity);
 
                     }
                     else if (s3.equals("Universitas Bhayangkara") && s4.equals("Stasiun Bekasi")) {
 
                         Intent MainActivity
-                                = new Intent(getActivity(), ST_Ubhara.class);
+                                = new Intent(getActivity(), Stasiun_Ubhara.class);
                         startActivity(MainActivity);
 
                     }

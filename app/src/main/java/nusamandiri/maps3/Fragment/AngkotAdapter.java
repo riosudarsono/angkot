@@ -18,8 +18,8 @@ import nusamandiri.maps3.R;
 /**
  * Provide views to RecyclerView with data from mDataSet.
  */
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
-    private static final String TAG = "CustomAdapter";
+public class AngkotAdapter extends RecyclerView.Adapter<AngkotAdapter.ViewHolder> {
+    private static final String TAG = "AngkotAdapter";
 
     private String[] mDataSet,mDataset2;
     private int[] mDataset3;
@@ -65,7 +65,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
      *
      * @param dataSet String[] containing the data to populate views to be used by RecyclerView.
      */
-    public CustomAdapter(String[] dataSet, String[] dataset2,int[] dataset3) {
+    public AngkotAdapter(String[] dataSet, String[] dataset2, int[] dataset3) {
         this.mDataSet = dataSet;
         this.mDataset2 = dataset2;
         this.mDataset3 = dataset3;
