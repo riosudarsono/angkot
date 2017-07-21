@@ -59,7 +59,19 @@
         <activity android:name=".Activity.Stasiun_Meutia" />
         <activity android:name=".Activity.Stasiun_Terminal" />
         <activity android:name=".Activity.Terminal_Square" />
-        <activity android:name=".Activity.Terminal_Ubhara"></activity>
+        <activity android:name=".Activity.Terminal_Ubhara" />
+        <activity android:name=".Activity.Terminal_Unisma" />
+        <activity android:name=".Activity.Terminal_Gundar" />
+        <activity android:name=".Activity.Terminal_Meutia" />
+        <activity android:name=".Activity.Square_Unisma" />
+        <activity android:name=".Activity.Square_Gundar" />
+        <activity android:name=".Activity.Square_Meutia" />
+        <activity android:name=".Activity.Ubhara_Unisma" />
+        <activity android:name=".Activity.Ubhara_Gundar" />
+        <activity android:name=".Activity.Ubhara_Meutia" />
+        <activity android:name=".Activity.Unisma_Gundar" />
+        <activity android:name=".Activity.Unisma_Meutia" />
+        <activity android:name=".Activity.Gundar_Meutia"></activity>
     </application>
 
 </manifest>
