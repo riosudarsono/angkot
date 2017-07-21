@@ -10,6 +10,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akexorcist.googledirection.DirectionCallback;
@@ -26,6 +27,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
@@ -36,7 +39,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Button btn_angkot2_sk;
     private Button btn_angkot3_sk;
     private Button btn_angkot4_sk;
+    private TextView mTextMessage;
     GoogleMap mGoogleMap;
+    Polyline line;
+
     private String serverKey = "AIzaSyBk8bt23ytMHcsc5cTCT7b6UmWYqjhseTQ";
     private LatLng camera = new LatLng(-6.214973, 107.012137);
 
@@ -57,8 +63,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             setContentView(R.layout.activity_main);
             initMap();
         } else {
+            Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
             //Tidak ada google maps layout
         }
+        mTextMessage = (TextView) findViewById(R.id.message);
+
         btn_angkot1_sk = (Button) findViewById(R.id.btn_angkot1_SK);
         btn_angkot1_sk.setOnClickListener(this);
 
@@ -131,16 +140,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.btn_angkot1_SK) {
+            mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
             requestDirection1();
+
         }
         else if (id == R.id.btn_angkot2_SK){
             requestDirection2();
+            mTextMessage.setText("Bundaran Summarecon - POM Bensin Permata \nRp 4.000");
         }
         else if (id == R.id.btn_angkot3_SK){
             requestDirection3();
+            mTextMessage.setText("Transit Angkot \nDari 45 ke 15A \nDari 15A ke 45");
         }
         else if (id == R.id.btn_angkot4_SK){
             requestDirection4();
+            mTextMessage.setText("Jalan Kaki / Angkot 09 (Rp. 1.000) \nBundaran Sumarecon - Universitas Bhayangkara");
         }
     }
 
@@ -198,12 +212,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void requestDirection4() {
         Snackbar.make(btn_angkot1_sk, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
-        GoogleDirection.withServerKey(serverKey)
-                .from(origin4)
-                .to(origin2)
-                .transportMode(TransportMode.TRANSIT)
-                .alternativeRoute(true)
-                .execute(this);
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin4)
                 .title("Jalan Kaki")
@@ -211,6 +219,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_jalan))
         );
         mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin4, 15));
+        PolylineOptions jalan  = new PolylineOptions()
+                .add(origin4)
+                .add(origin2)
+                .color(Color.GREEN)
+                .width(7);
+        line =mGoogleMap.addPolyline(jalan);
+
     }
 
     @Override
@@ -218,6 +233,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         Snackbar.make(btn_angkot1_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         Snackbar.make(btn_angkot2_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn_angkot3_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn_angkot4_sk, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         if (direction.isOK()) {
 
 
@@ -229,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onDirectionFailure(Throwable t) {
-        Snackbar.make(btn_angkot1_sk, t.getMessage(), Snackbar.LENGTH_SHORT).show();
+        Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
     }
 
 
