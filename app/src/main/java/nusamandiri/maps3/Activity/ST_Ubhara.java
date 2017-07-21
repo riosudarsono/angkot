@@ -14,7 +14,7 @@ import com.google.android.gms.maps.GoogleMap;
 
 import nusamandiri.maps3.R;
 
-public class ST_Kara_Activity extends AppCompatActivity {
+public class ST_Ubhara extends AppCompatActivity {
 
 
     GoogleMap mGoogleMap;

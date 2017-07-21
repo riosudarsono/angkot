@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 import nusamandiri.maps3.R;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
+public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
     private Button btn_angkot1_sk;
     private Button btn_angkot2_sk;
     private Button btn_angkot3_sk;

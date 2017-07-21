@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import nusamandiri.maps3.R;
 
-public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
+public class ST_Square extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
 
     private TextView mTextMessage;
     GoogleMap mGoogleMap;

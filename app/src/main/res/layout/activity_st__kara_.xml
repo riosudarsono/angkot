@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="bottom"
     android:orientation="vertical"
-    tools:context="nusamandiri.maps3.Activity.ST_Kara_Activity"
+    tools:context="nusamandiri.maps3.Activity.ST_Ubhara"
     tools:gravity="bottom">
 
     <fragment
