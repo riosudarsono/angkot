@@ -10,7 +10,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,26 +32,33 @@ import java.util.ArrayList;
 
 import nusamandiri.maps3.R;
 
-public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
+public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
 
     private TextView mTextMessage;
     GoogleMap mGoogleMap;
     private String serverKey = "AIzaSyBk8bt23ytMHcsc5cTCT7b6UmWYqjhseTQ";
-    private LatLng camera = new LatLng(-6.220068, 107.005191);
+    private LatLng camera = new LatLng(-6.215386, 107.005202);
 
     private LatLng origin1 = new LatLng(-6.236101, 107.000380);
     private LatLng destination1 = new LatLng(-6.203150, 107.002980);
+    //stasiun - pombensin permata
 
     private LatLng origin2 = new LatLng(-6.206557, 107.015297);
     private LatLng destination2 = new LatLng(-6.203150, 107.002980);
+    //bsi square - pom bensin permata
 
-    private LatLng origin4 = new LatLng(-6.224458, 107.009488);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_st__square_);
-        initMap();
+        if (googleServiceAvailable()) {
+            Toast.makeText(this, "Berhasil", Toast.LENGTH_LONG).show();
+            setContentView(R.layout.activity_st__square_);
+            initMap();
+        } else {
+            Toast.makeText(this, "MAPS Gagal Dimuat", Toast.LENGTH_LONG).show();//Tidak ada google maps layout
+        }
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -129,11 +135,6 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
 
     @Override
-    public void onClick(View v) {
-
-    }
-
-    @Override
     public void onDirectionSuccess(Direction direction, String rawBody) {
 
         if (direction.isOK()) {
@@ -148,7 +149,7 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
     @Override
     public void onDirectionFailure(Throwable t) {
-
+        Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
     }
 
 
@@ -161,15 +162,15 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_rute:
-                    mTextMessage.setText("Total Ongkos Perjalanan \n Rp. 8.000");
-
+                    mTextMessage.setText("Total Ongkos Perjalanan \nRp. 8.000");
+                    mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
                     return true;
                 case R.id.navigation_angkot15a:
-                    mTextMessage.setText("ST. Bekasi => POM Bensin Permata \n Rp. 5.000");
+                    mTextMessage.setText("Stasiun Bekasi - POM Bensin Permata \nRp. 5.000");
                     requestDirection1();
                     return true;
                 case R.id.navigation_angkot45:
-                    mTextMessage.setText("BSI Square => POM Bensin Permata \n Rp 3.000");
+                    mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
                     requestDirection2();
                     return true;
                 case R.id.navigation_transit:
@@ -189,8 +190,8 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin1)
-                .title("Angkot 45")
-                .snippet("depan BSI Square")
+                .title("Angkot 15A")
+                .snippet("depan Stasiun Bekasi")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
 
@@ -203,8 +204,8 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
 
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin2)
-                .title("Angkot 15A")
-                .snippet("depan Stasiun Bekasi")
+                .title("Angkot 45")
+                .snippet("depan BSI Square")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
 
@@ -216,13 +217,13 @@ public class ST_Square_Activity extends AppCompatActivity implements OnMapReadyC
     public void requestDirection3() {
 
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(origin2)
-                .title("Angkot 15A")
-                .snippet("depan Stasiun Bekasi")
+                .position(destination2)
+                .title("Tempat Transit")
+                .snippet("POM Bensin Permata")
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
                 );
 
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin2, 14));
+        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination2, 14));
 
 
     }

@@ -9,12 +9,17 @@
     <item
         android:id="@+id/navigation_angkot15a"
         android:icon="@drawable/ic_angkot"
-        android:title="Angkot 15A" />
+        android:title="15A" />
 
     <item
         android:id="@+id/navigation_angkot45"
         android:icon="@drawable/ic_angkot"
-        android:title="Angkot 45" />
+        android:title="45" />
+
+    <item
+        android:id="@+id/navigation_jalan"
+        android:icon="@drawable/ic_jalan"
+        android:title="Jalan Kaki" />
 
     <item
         android:id="@+id/navigation_transit"

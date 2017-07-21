@@ -108,7 +108,7 @@ public class BerandaActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_send) {
-            Intent intent = new Intent(this, ST_Shaleh_Activity.class);
+            Intent intent = new Intent(this, ST_Square_Activity.class);
             startActivity(intent);
             return true;
 

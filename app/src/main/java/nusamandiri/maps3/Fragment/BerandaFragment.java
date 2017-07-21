@@ -58,21 +58,30 @@ public class BerandaFragment extends Fragment {
             public void onClick(View view) {
 
                 if (view.getId() == R.id.btn_carirute) {
-                    if (s3.equals("BSI Square") && s4.equals("Universitas Bhayangkara")) {
+                    if (s3.equals("3") && s4.equals("4")) {
 
-                        Intent MainActivity
-                                = new Intent(getActivity(), nusamandiri.maps3.Activity.MainActivity.class);
-                        startActivity(MainActivity);
+                        Snackbar.make(view, "Silakan Pilih Tujuan", Snackbar.LENGTH_LONG).show();
 
-                    } else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Square")) {
+                    }
+                    else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Square")) {
 
                         Intent MainActivity
                                 = new Intent(getActivity(), nusamandiri.maps3.Activity.ST_Square_Activity.class);
                         startActivity(MainActivity);
 
-                    } else if (s3.equals("3") && s4.equals("4")) {
+                    }
+                    else if (s3.equals("BSI Square") && s4.equals("Stasiun Bekasi")) {
 
-                        Snackbar.make(view, "Silakan Pilih Tujuan", Snackbar.LENGTH_LONG).show();
+                        Intent MainActivity
+                                = new Intent(getActivity(), nusamandiri.maps3.Activity.ST_Square_Activity.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Square") && s4.equals("Universitas Bhayangkara")) {
+
+                            Intent MainActivity
+                                    = new Intent(getActivity(), nusamandiri.maps3.Activity.MainActivity.class);
+                            startActivity(MainActivity);
 
                     }
                     else {

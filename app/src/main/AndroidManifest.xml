@@ -52,9 +52,6 @@
         <activity
             android:name=".Activity.ST_Kara_Activity"
             android:label="@string/title_activity_st__kara_" />
-        <activity
-            android:name=".Activity.ST_Shaleh_Activity"
-            android:label="@string/title_activity_st__shaleh_"></activity>
     </application>
 
 </manifest>
