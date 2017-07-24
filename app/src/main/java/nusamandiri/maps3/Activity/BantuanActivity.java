@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import nusamandiri.maps3.R;
 
-public class Terminal_Square extends AppCompatActivity {
+public class BantuanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terminal__square);
+        setContentView(R.layout.activity_bantuan);
     }
 }

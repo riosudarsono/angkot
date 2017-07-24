@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.Square_Ubhara"
+            android:name=".Activity.RuteAngkot.Square_Ubhara"
             android:label="BSI Square - UBHARA"
             android:parentActivityName=".Activity.BerandaActivity" />
 
@@ -47,31 +47,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.Stasiun_Square"
+            android:name=".Activity.RuteAngkot.Stasiun_Square"
             android:label="@string/title_activity_st_square"
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
-            android:name=".Activity.Stasiun_Ubhara"
+            android:name=".Activity.RuteAngkot.Stasiun_Ubhara"
             android:label="@string/title_activity_st__kara_"
             android:parentActivityName=".Activity.BerandaActivity" />
-        <activity android:name=".Activity.Stasiun_Unisma" />
-        <activity android:name=".Activity.Stasiun_Gundar" />
-        <activity android:name=".Activity.Stasiun_Meutia" />
-        <activity android:name=".Activity.Stasiun_Terminal" />
-        <activity android:name=".Activity.Terminal_Square" />
-        <activity android:name=".Activity.Terminal_Ubhara" />
-        <activity android:name=".Activity.Terminal_Unisma" />
-        <activity android:name=".Activity.Terminal_Gundar" />
-        <activity android:name=".Activity.Terminal_Meutia" />
-        <activity android:name=".Activity.Square_Unisma" />
-        <activity android:name=".Activity.Square_Gundar" />
-        <activity android:name=".Activity.Square_Meutia" />
-        <activity android:name=".Activity.Ubhara_Unisma" />
-        <activity android:name=".Activity.Ubhara_Gundar" />
-        <activity android:name=".Activity.Ubhara_Meutia" />
-        <activity android:name=".Activity.Unisma_Gundar" />
-        <activity android:name=".Activity.Unisma_Meutia" />
-        <activity android:name=".Activity.Gundar_Meutia"></activity>
+        <activity android:name=".Activity.RuteAngkot.Stasiun_Unisma" />
+        <activity android:name=".Activity.RuteAngkot.Stasiun_Gundar" />
+        <activity android:name=".Activity.RuteAngkot.Stasiun_Meutia" />
+        <activity android:name=".Activity.RuteAngkot.Stasiun_Terminal" />
+        <activity android:name=".Activity.RuteAngkot.Terminal_Square" />
+        <activity android:name=".Activity.RuteAngkot.Terminal_Ubhara" />
+        <activity android:name=".Activity.RuteAngkot.Terminal_Unisma" />
+        <activity android:name=".Activity.RuteAngkot.Terminal_Gundar" />
+        <activity android:name=".Activity.RuteAngkot.Terminal_Meutia" />
+        <activity android:name=".Activity.RuteAngkot.Square_Unisma" />
+        <activity android:name=".Activity.RuteAngkot.Square_Gundar" />
+        <activity android:name=".Activity.RuteAngkot.Square_Meutia" />
+        <activity android:name=".Activity.RuteAngkot.Ubhara_Unisma" />
+        <activity android:name=".Activity.RuteAngkot.Ubhara_Gundar" />
+        <activity android:name=".Activity.RuteAngkot.Ubhara_Meutia" />
+        <activity android:name=".Activity.RuteAngkot.Unisma_Gundar" />
+        <activity android:name=".Activity.RuteAngkot.Unisma_Meutia" />
+        <activity android:name=".Activity.RuteAngkot.Gundar_Meutia" />
+        <activity android:name=".Activity.TentangActivity" />
+        <activity android:name=".Activity.BantuanActivity"></activity>
     </application>
 
 </manifest>

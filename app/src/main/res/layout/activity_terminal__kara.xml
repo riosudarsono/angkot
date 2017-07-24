@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nusamandiri.maps3.Activity.Terminal_Ubhara">
+    tools:context="nusamandiri.maps3.Activity.RuteAngkot.Terminal_Ubhara">
 
 </android.support.constraint.ConstraintLayout>

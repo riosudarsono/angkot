@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nusamandiri.maps3.Activity.RuteAngkot.Ubhara_Meutia">
+    tools:context="nusamandiri.maps3.Activity.BantuanActivity">
 
 </android.support.constraint.ConstraintLayout>

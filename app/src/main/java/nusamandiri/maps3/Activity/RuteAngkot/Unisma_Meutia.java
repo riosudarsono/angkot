@@ -1,15 +1,15 @@
-package nusamandiri.maps3.Activity;
+package nusamandiri.maps3.Activity.RuteAngkot;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import nusamandiri.maps3.R;
 
-public class Stasiun_Unisma extends AppCompatActivity {
+public class Unisma_Meutia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stasiun__unisma);
+        setContentView(R.layout.activity_unisma__meutia);
     }
 }

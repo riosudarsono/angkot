@@ -1,4 +1,4 @@
-package nusamandiri.maps3.Activity;
+package nusamandiri.maps3.Activity.RuteAngkot;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
 import com.akexorcist.googledirection.constant.TransportMode;
@@ -28,10 +29,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+
 import java.util.ArrayList;
+
 import nusamandiri.maps3.R;
 
-public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
+public class Stasiun_Ubhara extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
 
     private Button btn_angkot1_sk;
     private Button btn_angkot2_sk;

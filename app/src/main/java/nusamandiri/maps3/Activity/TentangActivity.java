@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import nusamandiri.maps3.R;
 
-public class Square_Meutia extends AppCompatActivity {
+public class TentangActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_square__meutia);
+        setContentView(R.layout.activity_tentang);
     }
 }

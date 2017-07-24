@@ -12,9 +12,9 @@ import android.widget.Button;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import nusamandiri.maps3.Activity.Stasiun_Ubhara;
-import nusamandiri.maps3.Activity.Stasiun_Square;
-import nusamandiri.maps3.Activity.Square_Ubhara;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
+import nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara;
 import nusamandiri.maps3.R;
 
 /**

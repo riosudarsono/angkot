@@ -1,15 +1,15 @@
-package nusamandiri.maps3.Activity;
+package nusamandiri.maps3.Activity.RuteAngkot;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import nusamandiri.maps3.R;
 
-public class Gundar_Meutia extends AppCompatActivity {
+public class Terminal_Ubhara extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gundar__meutia);
+        setContentView(R.layout.activity_terminal__kara);
     }
 }

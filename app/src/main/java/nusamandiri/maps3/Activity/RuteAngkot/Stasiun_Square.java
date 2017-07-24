@@ -1,4 +1,4 @@
-package nusamandiri.maps3.Activity;
+package nusamandiri.maps3.Activity.RuteAngkot;
 
 import android.Manifest;
 import android.app.Dialog;
