@@ -19,7 +19,9 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignLeft="@+id/icon"
-         android:layout_marginLeft="2dp"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="5dp"
          android:src="@drawable/icon_angkot"/>
         
     <TextView
@@ -39,13 +41,7 @@
         android:text="@string/isi"/>
 
 
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/isi"
-            android:layout_toRightOf="@+id/icon_item"
-            android:text="Detail"/>
+
     </RelativeLayout>
 
 </FrameLayout>

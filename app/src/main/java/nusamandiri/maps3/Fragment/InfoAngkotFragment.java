@@ -39,9 +39,9 @@ public class InfoAngkotFragment extends Fragment {
     protected String[] mDataset, mDataset2;
     protected int[] mDataset3;
 
-    int[] icon_item={R.drawable.icon_angkot, R.drawable.icon_jalan, R.drawable.icon_stasiun};
-    String[] judul={"Angkot","Jalan","Stasiun"};
-    String[] isi={"isi deskripsi adalah angkot","isi deskripsi adalah angkot","isi deskripsi adalah angkot"};
+    int[] icon_item={R.drawable.k09, R.drawable.kb09, R.drawable.k11, R.drawable.ka15, R.drawable.k25, R.drawable.k26, R.drawable.k45};
+    String[] judul={"Angkot 09", "Angkot 09B","Angkot 11","Angkot 15A","Angkot 25","Angkot 26","Angkot 45"};
+    String[] isi={"Babelan - Terminal Bekasi","Metropolitan Mall - Babelan","Bantar Gebang - Terminal Bekasi","Pondok Ungu Permai [BTN Lama] - Terminal Bekasi","Pulo Gebang - Rawa Panjang","Kampung Melayu - Bekasi ( BCP, MM )","Pulogadung - Rawa Kalong"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -72,8 +72,17 @@
         <activity android:name=".Activity.RuteAngkot.Unisma_Gundar" />
         <activity android:name=".Activity.RuteAngkot.Unisma_Meutia" />
         <activity android:name=".Activity.RuteAngkot.Gundar_Meutia" />
-        <activity android:name=".Activity.TentangActivity" />
-        <activity android:name=".Activity.BantuanActivity"></activity>
+        <activity
+            android:name=".Activity.TentangActivity"
+            android:parentActivityName=".Activity.BerandaActivity" />
+        <activity
+            android:name=".Activity.BantuanActivity"
+            android:parentActivityName=".Activity.BerandaActivity" />
+        <activity android:name=".Activity.DetailKampus.BSI_Square" />
+        <activity android:name=".Activity.DetailKampus.Universitas_Bhayangkara" />
+        <activity android:name=".Activity.DetailKampus.Universitas_Islam_45" />
+        <activity android:name=".Activity.DetailKampus.BSI_CutMeutia" />
+        <activity android:name=".Activity.DetailKampus.Universitas_Gunadarma"></activity>
     </application>
 
 </manifest>

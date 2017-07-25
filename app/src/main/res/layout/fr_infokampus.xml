@@ -22,6 +22,14 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp">
 
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="BSI SQUARE"
+            android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/icon_item"
@@ -29,236 +37,216 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_centerHorizontal="true"
+            android:layout_below="@id/judul"
             android:src="@drawable/icon_angkot"/>
 
         <TextView
-            android:id="@+id/judul"
+            android:id="@+id/alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/icon_item"
+            android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
 
         <TextView
-            android:id="@+id/isi"
+            android:id="@+id/telpon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/alamat"
+            android:text="Telp      : 021 - 88985613"/>
 
         <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
+            android:id="@+id/detail_square"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
-            android:text="Detail"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_item"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp">
-
-
-        <ImageView
-            android:id="@+id/icon_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_below="@id/telpon"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_angkot"/>
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/isi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
-
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
+            android:background="@drawable/bg_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
             android:text="Detail"/>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_item"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Universitas Bhayangkara"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/judul"
+                    android:src="@drawable/icon_angkot"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/icon_item"
+                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+
+                <TextView
+                    android:id="@+id/telpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/alamat"
+                    android:text="Telp      : 021 - 88985613"/>
+
+                <Button
+                    android:id="@+id/detail_ubhara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telpon"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Detail"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="BSI SQUARE"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/judul"
+                    android:src="@drawable/icon_angkot"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/icon_item"
+                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+
+                <TextView
+                    android:id="@+id/telpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/alamat"
+                    android:text="Telp      : 021 - 88985613"/>
+
+                <Button
+                    android:id="@+id/detail_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telpon"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Detail"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="BSI SQUARE"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/judul"
+                    android:src="@drawable/icon_angkot"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/icon_item"
+                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+
+                <TextView
+                    android:id="@+id/telpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/alamat"
+                    android:text="Telp      : 021 - 88985613"/>
+
+                <Button
+                    android:id="@+id/detail_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telpon"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Detail"/>
+            </RelativeLayout>
 
 
-        <ImageView
-            android:id="@+id/icon_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_angkot"/>
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/isi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
-
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
-            android:text="Detail"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_item"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp">
-
-
-        <ImageView
-            android:id="@+id/icon_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_angkot"/>
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/isi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
-
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
-            android:text="Detail"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_item"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp">
-
-
-        <ImageView
-            android:id="@+id/icon_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_angkot"/>
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/isi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
-
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
-            android:text="Detail"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_item"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp">
-
-
-        <ImageView
-            android:id="@+id/icon_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/icon_angkot"/>
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_item"
-            android:text="@string/judul"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/isi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:text="@string/isi"/>
-
-
-        <Button
-            android:id="@+id/tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/isi"
-            android:text="Detail"/>
-    </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

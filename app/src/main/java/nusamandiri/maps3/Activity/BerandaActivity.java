@@ -19,10 +19,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
 import nusamandiri.maps3.Fragment.BerandaFragment;
-import nusamandiri.maps3.Fragment.InfoKampusFragment;
 import nusamandiri.maps3.Fragment.InfoAngkotFragment;
+import nusamandiri.maps3.Fragment.InfoKampusFragment;
 import nusamandiri.maps3.R;
 
 public class BerandaActivity extends AppCompatActivity
@@ -82,9 +81,11 @@ public class BerandaActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.bantuan) {
 
-            loadFragmentt(new InfoKampusFragment());
+            Intent intent = new Intent(this, BantuanActivity.class);
+            startActivity(intent);
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -109,7 +110,7 @@ public class BerandaActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_send) {
-            Intent intent = new Intent(this, Stasiun_Square.class);
+            Intent intent = new Intent(this, TentangActivity.class);
             startActivity(intent);
             return true;
 

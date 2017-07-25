@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
+import nusamandiri.maps3.Activity.RuteAngkot.Gundar_Meutia;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara;
@@ -105,6 +106,13 @@ public class BerandaFragment extends Fragment {
 
                         Intent MainActivity
                                 = new Intent(getActivity(), Stasiun_Ubhara.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Gunadarma") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Gundar_Meutia.class);
                         startActivity(MainActivity);
 
                     }
