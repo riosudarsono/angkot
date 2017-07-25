@@ -38,7 +38,7 @@
             android:layout_marginTop="2dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/judul"
-            android:src="@drawable/icon_angkot"/>
+            android:src="@drawable/ic_bsi_square"/>
 
         <TextView
             android:id="@+id/alamat"
@@ -96,7 +96,7 @@
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/judul"
-                    android:src="@drawable/icon_angkot"/>
+                    android:src="@drawable/ic_ubhara"/>
 
                 <TextView
                     android:id="@+id/alamat"
@@ -154,7 +154,7 @@
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/judul"
-                    android:src="@drawable/icon_angkot"/>
+                    android:src="@drawable/ic_unisma"/>
 
                 <TextView
                     android:id="@+id/alamat"
