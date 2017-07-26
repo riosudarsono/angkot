@@ -89,7 +89,183 @@
         <b>Telp    :</b>
         <p>(021) 88860117</p>
         <b>Website :</b>
-        <p><a href="http://www.gunadarma.ac.id/">www.Gunadarma.ac.id</a></p>
+        <p><a href="http://www.gunadarma.ac.id/">gunadarma.ac.id</a></p>
+
+        ]]>
+    </string>
+
+    <string name="square">
+        <![CDATA[
+        <p><b>Visi : </b></p>
+        <p align="justify">Menghasilkan tenaga kerja ahli madya yang siap pakai dan menguasai teknologi komputer dan informatika serta menguasai bidang Program Studi. Perpaduan ilmu tersebut sangat dibutuhkan disemua sektor usaha, baik pemerintah, swasta nasional maupun perusahaan multinasional.</p>
+
+        <b>Program Studi BSI :</b>
+
+        <ul>
+        <li><b>Diploma Tiga (D3)<br>Akademi Manajemen Informatika & Komputer</b>
+        <ul>
+        <li>Komputerisasi Akuntansi</li>
+        <li>Manajemen Informatika</li>
+        </ul></li>
+
+        <b>Akademi Komunikasi</b>
+        <ul>
+        <li>Hubungan Masyarakat</li>
+        <li>Penyiaran</li>
+        </ul></li>
+        </ul>
+
+
+        <b>Program Studi Nusa Mandiri :</b>
+
+        <ul>
+        <li><b>Sarjana (S1)<br>Sekolah Tinggi Manajemen Informatika & Komputer</b></li>
+        <ul>
+        <li>Sistem Informasi</li>
+        <li>Teknik Informatika</li>
+        </ul></li>
+
+        </ul>
+
+        <b>Alamat  :</b>
+        <p>Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara</p>
+        <b>Telp    :</b>
+        <p>(021) 88985613</p>
+        <b>Website :</b>
+        <p><a href="http://pmb.bsi.ac.id">pmb.bsi.ac.id</a></p>
+
+        ]]>
+    </string>
+
+    <string name="ubhara">
+        <![CDATA[
+        <p><b>Visi : </b></p>
+        <p align="justify">Terwujudnya Universitas Bhayangkara Jakarta Raya sebagai Universitas unggulan di tingkat nasional yang berwawasan kebangsaan dan berbasis sekuriti guna menghasilkan sumber daya manusia yang mampu bersaing dan berperilaku baik.</p>
+
+        <b>Program Studi :</b>
+
+        <ul>
+        <li><b>Sarjana (S1)<br>Fakultas Hukum</b></li>
+        <ul>
+        <li>Ilmu Hukum</li>
+        </ul></li>
+
+        <b>Fakultas Teknik</b>
+        <ul>
+        <li>Teknik Informatika</li>
+        <li>Teknik Industri</li>
+        <li>Teknik Kimia</li>
+        <li>Teknik Lingkungan</li>
+        <li>Teknik Perminyakan</li>
+        </ul></li>
+
+        <b>Fakultas Ekonomi</b>
+        <ul>
+        <li>Manajemen</li>
+        <li>Akuntansi</li>
+        </ul></li>
+
+        <b>Fakultas Ilmu Komunikasi</b>
+        <ul>
+        <li>Ilmu Komunikasi</li>
+        </ul></li>
+
+        <b>Fakultas Psikologi</b>
+        <ul>
+        <li>Psikologi</li>
+        </ul></li>
+
+        </ul>
+
+        <ul>
+        <li><b>PascaSarjana (S2)</b></li>
+        <ul>
+        <li>Magister Manajemen (MM)</li>
+        <li>Magister Ilmu Hukum (MH)</li>
+        </ul></li>
+        </ul>
+
+        <b>Alamat  :</b>
+        <p>Jl. Raya Perjuangan, Bekasi Utara, Kota Bekasi</p>
+        <b>Telp    :</b>
+        <p>(021) 88955882</p>
+        <b>Website :</b>
+        <p><a href="http://ubharajaya.ac.id/">ubharajaya.ac.id</a></p>
+
+        ]]>
+    </string>
+
+    <string name="unisma">
+        <![CDATA[
+        <p><b>Visi : </b></p>
+        <p align="justify">“Dengan spirit islam, pada tahun 2033 terwujud universitas yang memenuhi Standar Mutu Pendidikan Tinggi Nasional, kompeten dalam ilmu dan teknologi, aktif dalam riset dan proses perubahan masyarakat, berwawasan wirausaha dan mampu memenuhi harapan pihak-pihak terkait.”</p>
+
+        <b>Program Studi :</b>
+
+        <ul>
+        <li><b>Sarjana (S1)<br>Fakultas Komunikasi, Sastra dan Bahasa</b></li>
+        <ul>
+        <li>Ilmu Komunikasi</li>
+        <li>Sastra Inggris</li>
+        </ul></li>
+
+        <b>Fakultas Keguruan dan Ilmu Pendidikan</b>
+        <ul>
+        <li>Pendidikan Guru Sekolah Dasar</li>
+        <li>Pendidikan Jasmani Kesehatan dan Rekreasi</li>
+        <li>Geografi</li>
+        </ul></li>
+
+        <b>Fakultas Ilmu Sosial dan Ilmu Politik</b>
+        <ul>
+        <li>Ilmu Pemerintahan</li>
+        <li>Administrasi Negara</li>
+        <li>Psikologi</li>
+        <li>Manajemen Administrasi (D3)*</li>
+        </ul></li>
+
+        <b>Fakultas Pertanian</b>
+        <ul>
+        <li>Agribisnis</li>
+        </ul></li>
+
+        <b>Fakultas Agama Islam</b>
+        <ul>
+        <li>Perbankan Syariah </li>
+        <li>Tarbiyah</li>
+        <li>Syariah</li>
+        </ul></li>
+
+        <b>Fakultas Ekonomi</b>
+        <ul>
+        <li>Manajemen</li>
+        <li>Akuntansi</li>
+        </ul></li>
+
+        <b>Fakultas Teknik</b>
+        <ul>
+        <li>Teknik Mesin (D3 & S1)*</li>
+        <li>Teknik Sipil</li>
+        <li>Teknik Elektronika (D3 & S1)*</li>
+        <li>Teknik Komputer (D3)*</li>
+        </ul></li>
+
+        </ul>
+
+        <ul>
+        <li><b>PascaSarjana (S2)</b></li>
+        <ul>
+        <li>Magister Manajemen Pendidikan Islam</li>
+        <li>Magister Ilmu Pemerintahan</li>
+        </ul></li>
+        </ul>
+
+        <b>Alamat  :</b>
+        <p>Jl. Cut Meutia No.83, Bekasi</p>
+        <b>Telp    :</b>
+        <p>(021) 8808853</p>
+        <b>Website :</b>
+        <p><a href="http://www.unismabekasi.ac.id/">unismabekasi.ac.id</a></p>
 
         ]]>
     </string>
