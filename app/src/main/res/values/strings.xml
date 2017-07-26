@@ -35,5 +35,32 @@
     <string name="isi">isi</string>
     <string name="title_activity_st__unisma">ST_Unisma</string>
 
+    <string name="gundar">
+        <![CDATA[
+        <p><b>Visi : </b></p>
+        <p align="justify">Pada tahun 2017 Universitas Gunadarma menjadi perguruan tinggi swasta terkemuka yang bereputasi internasional, memiliki jejaring global, dan memberikan kontribusi signifikan bagi peningkatan daya saing bangsa</p>
+
+        <p><b>Program Studi :</b></p>
+        <ul>
+        <li><b>Diploma Tiga (D3)</b>
+        <ul>
+        <li>Manajemen Informatika</li>
+        <li>Teknik Komputer</li>
+        <li>Akutansi Komputer</li>
+        <li>Manajemen Pemasaran</li>
+        <li>Manajemen Keuangan</li>
+        </ul></li>
+        <li><b>Sarjana (S1)<br>Fakultas Ilmu Komputer & Teknologi Informasi</b></li>
+
+        </ul>
+        <p>This is an OL list:
+        <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        </ol>
+        ]]>
+    </string>
+
 
 </resources>
