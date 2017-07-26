@@ -9,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import nusamandiri.maps3.Activity.DetailKampus.BSI_CutMeutia;
 import nusamandiri.maps3.Activity.DetailKampus.BSI_Square;
 import nusamandiri.maps3.Activity.DetailKampus.Universitas_Bhayangkara;
+import nusamandiri.maps3.Activity.DetailKampus.Universitas_Gunadarma;
+import nusamandiri.maps3.Activity.DetailKampus.Universitas_Islam_45;
 import nusamandiri.maps3.R;
 
 /**
@@ -41,6 +44,39 @@ public class InfoKampusFragment extends Fragment {
                 if (view.getId() == R.id.detail_ubhara) {
                     Intent MainActivity
                             = new Intent(getActivity(), Universitas_Bhayangkara.class);
+                    startActivity(MainActivity);
+                }
+            }});
+
+        Button btnunisma = (Button) fragmentView.findViewById(R.id.detail_unisma);
+        btnunisma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getId() == R.id.detail_unisma) {
+                    Intent MainActivity
+                            = new Intent(getActivity(), Universitas_Islam_45.class);
+                    startActivity(MainActivity);
+                }
+            }});
+
+        Button btngundar = (Button) fragmentView.findViewById(R.id.detail_gundar);
+        btngundar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getId() == R.id.detail_gundar) {
+                    Intent MainActivity
+                            = new Intent(getActivity(), Universitas_Gunadarma.class);
+                    startActivity(MainActivity);
+                }
+            }});
+
+        Button btnmeutia = (Button) fragmentView.findViewById(R.id.detail_meutia);
+        btnmeutia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getId() == R.id.detail_meutia) {
+                    Intent MainActivity
+                            = new Intent(getActivity(), BSI_CutMeutia.class);
                     startActivity(MainActivity);
                 }
             }});
