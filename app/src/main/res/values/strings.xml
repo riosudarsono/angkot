@@ -40,7 +40,8 @@
         <p><b>Visi : </b></p>
         <p align="justify">Pada tahun 2017 Universitas Gunadarma menjadi perguruan tinggi swasta terkemuka yang bereputasi internasional, memiliki jejaring global, dan memberikan kontribusi signifikan bagi peningkatan daya saing bangsa</p>
 
-        <p><b>Program Studi :</b></p>
+        <b>Program Studi :</b>
+
         <ul>
         <li><b>Diploma Tiga (D3)</b>
         <ul>
@@ -50,15 +51,46 @@
         <li>Manajemen Pemasaran</li>
         <li>Manajemen Keuangan</li>
         </ul></li>
+        <p></p>
+
         <li><b>Sarjana (S1)<br>Fakultas Ilmu Komputer & Teknologi Informasi</b></li>
+        <ul>
+        <li>Akuntansi</li>
+        <li>Manajemen</li>
+        </ul></li>
+
+        <b>Fakultas Teknologi Industri</b>
+        <ul>
+        <li>Teknik Informatika</li>
+        <li>Teknik Elektro</li>
+        <li>Teknik Mesin</li>
+        <li>Teknik Industri</li>
+        </ul></li>
+
+        <b>Fakultas Psikologi</b>
+        <ul>
+        <li>Psikologi</li>
+        </ul></li>
+
+        <b>Fakultas Sastra & Budaya</b>
+        <ul>
+        <li>Sastra Inggris</li>
+        </ul></li>
+
+        <b>Fakultas Ilmu Komunikasi</b>
+        <ul>
+        <li>Ilmu Komunikasi</li>
+        </ul></li>
 
         </ul>
-        <p>This is an OL list:
-        <ol>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        </ol>
+
+        <b>Alamat  :</b>
+        <p>Jl. KH. Noer Ali, Kalimalang, Bekasi</p>
+        <b>Telp    :</b>
+        <p>(021) 88860117</p>
+        <b>Website :</b>
+        <p><a href="http://www.gunadarma.ac.id/">www.Gunadarma.ac.id</a></p>
+
         ]]>
     </string>
 
