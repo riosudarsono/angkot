@@ -12,8 +12,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +27,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:text="BSI SQUARE"
+            android:layout_centerHorizontal="true"
             android:textStyle="bold"/>
 
         <ImageView
@@ -38,7 +37,7 @@
             android:layout_marginTop="2dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/judul"
-            android:src="@drawable/ic_bsi_square"/>
+            android:src="@drawable/bsi125"/>
 
         <TextView
             android:id="@+id/alamat"
@@ -55,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_below="@id/alamat"
-            android:text="Telp      : 021 - 88985613"/>
+            android:text="Telp      : (021) 88985613"/>
 
         <Button
             android:id="@+id/detail_square"
@@ -86,7 +85,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:text="Universitas Bhayangkara"
+                    android:text="UNIVERSITAS BHAYANGKARA"
+                    android:layout_centerHorizontal="true"
                     android:textStyle="bold"/>
 
                 <ImageView
@@ -96,7 +96,7 @@
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/judul"
-                    android:src="@drawable/ic_ubhara"/>
+                    android:src="@drawable/ubhara125"/>
 
                 <TextView
                     android:id="@+id/alamat"
@@ -105,7 +105,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/icon_item"
-                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+                    android:text="Alamat : Jl. Raya Perjuangan, Bekasi Utara, Kota Bekasi"/>
 
                 <TextView
                     android:id="@+id/telpon"
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/alamat"
-                    android:text="Telp      : 021 - 88985613"/>
+                    android:text="Telp      : (021) 88955882"/>
 
                 <Button
                     android:id="@+id/detail_ubhara"
@@ -144,7 +144,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:text="BSI SQUARE"
+                    android:text="UNIVERSITAS ISLAM 45 BEKASI"
+                    android:layout_centerHorizontal="true"
                     android:textStyle="bold"/>
 
                 <ImageView
@@ -154,7 +155,7 @@
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/judul"
-                    android:src="@drawable/ic_unisma"/>
+                    android:src="@drawable/unisma125"/>
 
                 <TextView
                     android:id="@+id/alamat"
@@ -163,7 +164,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/icon_item"
-                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+                    android:text="Alamat : Jl. Cut Meutia No.83, Bekasi"/>
 
                 <TextView
                     android:id="@+id/telpon"
@@ -171,10 +172,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/alamat"
-                    android:text="Telp      : 021 - 88985613"/>
+                    android:text="Telp      : (021) 8808853"/>
 
                 <Button
-                    android:id="@+id/detail_square"
+                    android:id="@+id/detail_unisma"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/telpon"
@@ -202,7 +203,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:text="BSI SQUARE"
+                    android:text="UNIVERSITAS GUNADARMA"
+                    android:layout_centerHorizontal="true"
                     android:textStyle="bold"/>
 
                 <ImageView
@@ -212,7 +214,7 @@
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/judul"
-                    android:src="@drawable/icon_angkot"/>
+                    android:src="@drawable/gundar125"/>
 
                 <TextView
                     android:id="@+id/alamat"
@@ -221,7 +223,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/icon_item"
-                    android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
+                    android:text="Alamat : Jl. KH. Noer Ali, Kalimalang, Bekasi"/>
 
                 <TextView
                     android:id="@+id/telpon"
@@ -229,10 +231,69 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_below="@id/alamat"
-                    android:text="Telp      : 021 - 88985613"/>
+                    android:text="Telp      : (021) 88860117"/>
 
                 <Button
-                    android:id="@+id/detail_square"
+                    android:id="@+id/detail_gundar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telpon"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Detail"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="BSI CUT MEUTIA"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/judul"
+                    android:src="@drawable/bsi125"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/icon_item"
+                    android:text="Alamat : Jl. Cut Meutia No.88, Bekasi"/>
+
+                <TextView
+                    android:id="@+id/telpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/alamat"
+                    android:text="Telp      : (021) 82425634"/>
+
+                <Button
+                    android:id="@+id/detail_meutia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/telpon"
