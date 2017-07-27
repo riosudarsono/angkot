@@ -117,7 +117,7 @@ public class Square_Ubhara extends AppCompatActivity implements OnMapReadyCallba
 
 
     private void initMap() {
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.mapFragment);
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.mapfragment_square_ubhara);
         mapFragment.getMapAsync(this);
     }
 

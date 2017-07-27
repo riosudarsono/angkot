@@ -65,7 +65,10 @@
         <activity android:name=".Activity.RuteAngkot.Terminal_Meutia" />
         <activity android:name=".Activity.RuteAngkot.Square_Unisma" />
         <activity android:name=".Activity.RuteAngkot.Square_Gundar" />
-        <activity android:name=".Activity.RuteAngkot.Square_Meutia" />
+        <activity
+            android:name=".Activity.RuteAngkot.Square_Meutia"
+            android:label="BSI Square - BSI Bekasi"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity android:name=".Activity.RuteAngkot.Ubhara_Unisma" />
         <activity android:name=".Activity.RuteAngkot.Ubhara_Gundar" />
         <activity android:name=".Activity.RuteAngkot.Ubhara_Meutia" />

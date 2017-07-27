@@ -7,7 +7,7 @@
     tools:context="nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara">
 
     <fragment
-        android:id="@+id/mapFragment"
+        android:id="@+id/mapfragment_square_ubhara"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import nusamandiri.maps3.Activity.RuteAngkot.Gundar_Meutia;
+import nusamandiri.maps3.Activity.RuteAngkot.Square_Meutia;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara;
@@ -65,6 +66,20 @@ public class BerandaFragment extends Fragment {
                     if (s3.equals("3") && s4.equals("4")) {
 
                         Snackbar.make(view, "Silakan Pilih Tujuan", Snackbar.LENGTH_LONG).show();
+
+                    }
+                    else if (s3.equals("BSI Cut Meutia") && s4.equals("BSI Square")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Square") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Meutia.class);
+                        startActivity(MainActivity);
 
                     }
                     else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Square")) {
