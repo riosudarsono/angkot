@@ -270,5 +270,30 @@
         ]]>
     </string>
 
+    <string name="meutia">
+        <![CDATA[
+        <p><b>Visi : </b></p>
+        <p align="justify">Menghasilkan tenaga kerja ahli madya yang siap pakai dan menguasai teknologi komputer dan informatika serta menguasai bidang Program Studi. Perpaduan ilmu tersebut sangat dibutuhkan disemua sektor usaha, baik pemerintah, swasta nasional maupun perusahaan multinasional.</p>
+
+        <b>Program Studi BSI :</b>
+
+        <ul>
+        <li><b>Diploma Tiga (D3)<br>Akademi Manajemen Informatika & Komputer</b>
+        <ul>
+        <li>Komputerisasi Akuntansi</li>
+        <li>Manajemen Informatika</li>
+        </ul></li>
+        </ul>
+
+        <b>Alamat  :</b>
+        <p>Jl. Cut Meutia No.88, Bekasi</p>
+        <b>Telp    :</b>
+        <p>(021) 82425634</p>
+        <b>Website :</b>
+        <p><a href="http://pmb.bsi.ac.id">pmb.bsi.ac.id</a></p>
+
+        ]]>
+    </string>
+
 
 </resources>
