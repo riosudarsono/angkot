@@ -70,7 +70,10 @@
         <activity android:name=".Activity.RuteAngkot.Terminal_Square" />
         <activity android:name=".Activity.RuteAngkot.Terminal_Ubhara" />
         <activity android:name=".Activity.RuteAngkot.Terminal_Unisma" />
-        <activity android:name=".Activity.RuteAngkot.Terminal_Gundar" />
+        <activity
+            android:name=".Activity.RuteAngkot.Terminal_Gundar"
+            android:label="GUNDAR - Terminal"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity android:name=".Activity.RuteAngkot.Terminal_Meutia" />
         <activity
             android:name=".Activity.RuteAngkot.Square_Unisma"
