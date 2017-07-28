@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Terminal">
 
-</android.support.constraint.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/mapfragment_stasiun_terminal"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn2_stasiun_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angkot 15A"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            />
+
+
+        <TextView
+            android:id="@+id/message_stasiun_terminal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2_stasiun_terminal"
+            android:layout_marginLeft="7dp"
+            android:text="Total Ongkos Perjalanan \nRp. 5.000" />
+
+    </RelativeLayout>
+</RelativeLayout>
