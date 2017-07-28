@@ -181,15 +181,15 @@ public class Terminal_Gundar extends AppCompatActivity implements OnMapReadyCall
         }
         else if (id == R.id.btn2_terminal_gundar){
             requestDirection2();
-            mTextMessage.setText("POM Bensin Cut Meutia - BCP (Bekasi Cyber Park) \nRp 9.000");
+            mTextMessage.setText("POM Bensin Cut Meutia - BCP (Bekasi Cyber Park) \nRp 4.000");
         }
         else if (id == R.id.btn3_terminal_gundar){
             requestDirection3();
-            mTextMessage.setText("BCP (Bekasi Cyber Park) - depan Universitas Gunadarma");
+            mTextMessage.setText("Pangkalan Angkot 26 - depan Universitas Gunadarma\nRp 3.000");
         }
         else if (id == R.id.btn4_terminal_gundar){
             requestDirection4();
-            mTextMessage.setText("Transit POM Bensin \nDari 11 ke 25\nDari25 ke 11 ");
+            mTextMessage.setText("Transit POM Bensin \nDari 11 ke 25\nDari 25 ke 11 ");
         }
         else if (id == R.id.btn5_terminal_gundar){
             requestDirection5();

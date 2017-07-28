@@ -80,7 +80,7 @@
             android:id="@+id/message_terminal_gundar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn3_terminal_gundar"
+            android:layout_below="@+id/btn5_terminal_gundar"
             android:layout_marginLeft="7dp"
             android:text="Total Ongkos Perjalanan \nRp. 12.000" />
 
