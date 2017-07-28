@@ -231,7 +231,7 @@ public class Square_Meutia extends AppCompatActivity implements OnMapReadyCallba
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(destination2)
                 .title("Angkot K15")
-                .snippet("Depan Unismaa")
+                .snippet("Depan Unisma")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
 

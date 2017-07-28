@@ -52,9 +52,12 @@
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Ubhara"
-            android:label="@string/title_activity_st__kara_"
+            android:label="Stasiun - UBHARA"
             android:parentActivityName=".Activity.BerandaActivity" />
-        <activity android:name=".Activity.RuteAngkot.Stasiun_Unisma" />
+        <activity
+            android:name=".Activity.RuteAngkot.Stasiun_Unisma"
+            android:label="Stasiun - UNISMA"
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity android:name=".Activity.RuteAngkot.Stasiun_Gundar" />
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Meutia"

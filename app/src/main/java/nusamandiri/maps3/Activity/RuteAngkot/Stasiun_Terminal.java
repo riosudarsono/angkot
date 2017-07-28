@@ -162,7 +162,7 @@ public class Stasiun_Terminal extends AppCompatActivity implements OnMapReadyCal
         int id = v.getId();
         if (id == R.id.btn2_stasiun_terminal) {
             requestDirection2();
-            mTextMessage.setText("POM Bensin Permata - UNISMA \nRp 9.000");
+            mTextMessage.setText("Stasiun Bekasi - Terminal Bekasi \nRp 4.000");
 
         }
     }

@@ -6,8 +6,9 @@
     android:orientation="vertical"
     tools:context="nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara">
 
+
     <fragment
-        android:id="@+id/mapFragment"
+        android:id="@+id/mapfragment_stasiun_ubhara"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -18,7 +19,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_angkot1_SK"
+            android:id="@+id/btn1_stasiun_ubhara"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -27,51 +28,16 @@
             android:layout_marginTop="3dp"
             android:background="@drawable/bg_button"
             android:textColor="@color/colorWhite"
-            android:text="Angkot 45" />
+            android:text="Angkot 09" />
 
-        <Button
-            android:id="@+id/btn_angkot2_SK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Angkot 15A"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/bg_button"
-            android:textColor="@color/colorWhite"
-            android:layout_toRightOf="@id/btn_angkot1_SK" />
-
-        <Button
-            android:id="@+id/btn_angkot3_SK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transit"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/bg_button"
-            android:textColor="@color/colorWhite"
-            android:layout_below="@id/btn_angkot1_SK"/>
-
-        <Button
-            android:id="@+id/btn_angkot4_SK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/bg_button"
-            android:textColor="@color/colorWhite"
-            android:text="Jalan Kaki"
-            android:layout_toRightOf="@id/btn_angkot3_SK"
-            android:layout_below="@id/btn_angkot2_SK"/>
 
         <TextView
-            android:id="@+id/message"
+            android:id="@+id/message_stasiun_ubhara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_angkot4_SK"
+            android:layout_below="@+id/btn1_stasiun_ubhara"
             android:layout_marginLeft="7dp"
-            android:text="Total Ongkos Perjalanan \nRp. 8.000" />
+            android:text="Total Ongkos Perjalanan \nRp. 4.000" />
 
     </RelativeLayout>
 </RelativeLayout>
-
-

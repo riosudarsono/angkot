@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn2_stasiun_terminal"
             android:layout_marginLeft="7dp"
-            android:text="Total Ongkos Perjalanan \nRp. 5.000" />
+            android:text="Total Ongkos Perjalanan \nRp. 4.000" />
 
     </RelativeLayout>
 </RelativeLayout>
