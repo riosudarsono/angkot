@@ -48,7 +48,7 @@
         </activity>
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Square"
-            android:label="@string/title_activity_st_square"
+            android:label="Stasiun Bekasi - BSI Square"
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Ubhara"
@@ -56,7 +56,10 @@
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity android:name=".Activity.RuteAngkot.Stasiun_Unisma" />
         <activity android:name=".Activity.RuteAngkot.Stasiun_Gundar" />
-        <activity android:name=".Activity.RuteAngkot.Stasiun_Meutia" />
+        <activity
+            android:name=".Activity.RuteAngkot.Stasiun_Meutia"
+            android:label="Stasiun Bekasi - BSI Cut Meutia"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity android:name=".Activity.RuteAngkot.Stasiun_Terminal" />
         <activity android:name=".Activity.RuteAngkot.Terminal_Square" />
         <activity android:name=".Activity.RuteAngkot.Terminal_Ubhara" />

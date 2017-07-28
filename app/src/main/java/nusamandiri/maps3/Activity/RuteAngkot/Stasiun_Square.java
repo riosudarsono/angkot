@@ -2,14 +2,17 @@ package nusamandiri.maps3.Activity.RuteAngkot;
 
 import android.Manifest;
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,9 +33,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 
+import nusamandiri.maps3.Activity.BantuanActivity;
 import nusamandiri.maps3.R;
 
-public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallback, DirectionCallback {
+public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
+
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
 
     private TextView mTextMessage;
     GoogleMap mGoogleMap;
@@ -60,16 +68,49 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
             Toast.makeText(this, "MAPS Gagal Dimuat", Toast.LENGTH_LONG).show();//Tidak ada google maps layout
         }
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        mTextMessage = (TextView) findViewById(R.id.message_stasiun_square);
+
+        btn1 = (Button) findViewById(R.id.btn1_stasiun_square);
+        btn1.setOnClickListener(this);
+
+        btn2 = (Button) findViewById(R.id.btn2_stasiun_square);
+        btn2.setOnClickListener(this);
+
+        btn3 = (Button) findViewById(R.id.btn3_stasiun_square);
+        btn3.setOnClickListener(this);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.beranda, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.bantuan) {
+
+            Intent intent = new Intent(this, BantuanActivity.class);
+            startActivity(intent);
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
     private void initMap() {
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.mapfragment_st_square);
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.mapfragment_stasiun_square);
         mapFragment.getMapAsync(this);
     }
 
@@ -88,9 +129,7 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         mGoogleMap = googleMap;
-
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -104,6 +143,61 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
         mGoogleMap.setMyLocationEnabled(true);
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
 
+        LatLng kampus1 = new LatLng(-6.206205, 107.015420);
+        mGoogleMap.addMarker(new MarkerOptions()
+                .position(kampus1)
+                .title("BSI Square")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_kampus))
+        );
+
+        LatLng kampus2 = new LatLng(-6.236144, 106.999377);
+        mGoogleMap.addMarker(new MarkerOptions()
+                .position(kampus2)
+                .title("Stasiun Bekasi")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_station))
+        );
+    }
+
+
+
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.btn1_stasiun_square) {
+            mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
+            requestDirection1();
+        }
+        else if (id == R.id.btn2_stasiun_square){
+            requestDirection2();
+            mTextMessage.setText("POM Bensin Permata - Stasiun Bekasi \nRp 5.000");
+        }
+        else if (id == R.id.btn3_stasiun_square){
+            requestDirection3();
+            mTextMessage.setText("Transit Angkot \nDari 45 ke 15A\nDari 15A ke 45");
+        }
+
+    }
+
+    public void requestDirection1() {
+        Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
+        GoogleDirection.withServerKey(serverKey)
+                .from(origin2)
+                .to(destination2)
+                .transportMode(TransportMode.TRANSIT)
+                .alternativeRoute(true)
+                .execute(this);
+        mGoogleMap.addMarker(new MarkerOptions()
+                .position(origin2)
+                .title("Angkot 45")
+                .snippet("depan BSI Square")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
+        );
+        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin2, 14));
+    }
+
+    public void requestDirection2() {
+        Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
         GoogleDirection.withServerKey(serverKey)
                 .from(origin1)
                 .to(destination1)
@@ -111,25 +205,25 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
                 .alternativeRoute(true)
                 .execute(this);
 
-        GoogleDirection.withServerKey(serverKey)
-                .from(origin2)
-                .to(destination2)
-                .transportMode(TransportMode.TRANSIT)
-                .alternativeRoute(true)
-                .execute(this);
 
-        LatLng stasiun = new LatLng(-6.236722, 106.999387);
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(stasiun)
-                .title("Stasiun Bekasi")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_stasiun))
+                .position(origin1)
+                .title("Angkot K15")
+                .snippet("Depan Stasiun")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
-        LatLng kampus = new LatLng(-6.206071, 107.015447);
+
+        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin1, 14));
+    }
+
+    public void requestDirection3() {
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(kampus)
-                .title("BSI SQUARE")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_kampus))
+                .position(destination1)
+                .title("Transit")
+                .snippet("POM Bensin Permata")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
+        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination1, 14));
     }
 
 
@@ -137,14 +231,15 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onDirectionSuccess(Direction direction, String rawBody) {
 
-        if (direction.isOK()) {
+        Snackbar.make(btn1, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn2, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn3, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
 
+        if (direction.isOK()) {
 
             ArrayList<LatLng> directionPositionList = direction.getRouteList().get(0).getLegList().get(0).getDirectionPoint();
             mGoogleMap.addPolyline(DirectionConverter.createPolyline(this, directionPositionList, 5, Color.BLUE));
-
         }
-
     }
 
     @Override
@@ -152,79 +247,4 @@ public class Stasiun_Square extends AppCompatActivity implements OnMapReadyCallb
         Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
     }
 
-
-
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_rute:
-                    mTextMessage.setText("Total Ongkos Perjalanan \nRp. 8.000");
-                    mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
-                    return true;
-                case R.id.navigation_angkot15a:
-                    mTextMessage.setText("Stasiun Bekasi - POM Bensin Permata \nRp. 5.000");
-                    requestDirection1();
-                    return true;
-                case R.id.navigation_angkot45:
-                    mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
-                    requestDirection2();
-                    return true;
-                case R.id.navigation_transit:
-                    mTextMessage.setText("Dari Angkot 15A ke Angkot 45" +
-                            "\nDari Angkot 45   ke Angkot 15A");
-                    requestDirection3();
-                    return true;
-            }
-            return false;
-        }
-
-    };
-
-
-
-    public void requestDirection1() {
-
-        mGoogleMap.addMarker(new MarkerOptions()
-                .position(origin1)
-                .title("Angkot 15A")
-                .snippet("depan Stasiun Bekasi")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
-        );
-
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin1, 14));
-
-
-    }
-
-    public void requestDirection2() {
-
-        mGoogleMap.addMarker(new MarkerOptions()
-                .position(origin2)
-                .title("Angkot 45")
-                .snippet("depan BSI Square")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
-        );
-
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin2, 14));
-
-
-    }
-
-    public void requestDirection3() {
-
-        mGoogleMap.addMarker(new MarkerOptions()
-                .position(destination2)
-                .title("Tempat Transit")
-                .snippet("POM Bensin Permata")
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
-                );
-
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination2, 14));
-
-
-    }
 }

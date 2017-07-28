@@ -39,9 +39,9 @@ import nusamandiri.maps3.Activity.BantuanActivity;
 import nusamandiri.maps3.R;
 
 public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener, DirectionCallback {
-    private Button btn1;
+
     private Button btn2;
-    private Button btn3;
+
     private Button btn4;
 
     private TextView mTextMessage;
@@ -50,17 +50,15 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
     Polyline line;
 
     private String serverKey = "AIzaSyBk8bt23ytMHcsc5cTCT7b6UmWYqjhseTQ";
-    private LatLng camera = new LatLng(-6.222579, 107.003395);
+    private LatLng camera = new LatLng(-6.244729, 107.004355);
 
-    private LatLng origin1 = new LatLng(-6.206557, 107.015281);//depan bsi square
-    private LatLng destination1 = new LatLng(-6.203150, 107.002980);//POM Bensin Permata
 
     private LatLng origin2 = new LatLng(-6.249777, 107.015343);//Terminal1
     private LatLng destination2 = new LatLng(-6.256568, 107.005368);//depan unisma
 
     private LatLng origin3 = new LatLng(-6.2598283,107.0028272);
     //depan bsi cut meutia
-    private LatLng origin4 = new LatLng(-6.237339, 107.000224);//Terminal12
+    private LatLng origin4 = new LatLng(-6.2360952,107.0003635);//depan stasiun
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,16 +71,14 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
             Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show();
             //Tidak ada google maps layout
         }
-        mTextMessage = (TextView) findViewById(R.id.message_square_meutia);
+        mTextMessage = (TextView) findViewById(R.id.message_stasiun_meutia);
 
-        btn1 = (Button) findViewById(R.id.btn1_stasiun_meutia);
-        btn1.setOnClickListener(this);
+
 
         btn2 = (Button) findViewById(R.id.btn2_stasiun_meutia);
         btn2.setOnClickListener(this);
 
-        btn3 = (Button) findViewById(R.id.btn3_stasiun_meutia);
-        btn3.setOnClickListener(this);
+
 
         btn4 = (Button) findViewById(R.id.btn4_stasiun_meutia);
         btn4.setOnClickListener(this);
@@ -148,13 +144,13 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
             return;
         }
         mGoogleMap.setMyLocationEnabled(true);
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 13));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera, 14));
 
-        LatLng kampus1 = new LatLng(-6.206205, 107.015420);
+        LatLng kampus1 = new LatLng(-6.236181, 106.999398);
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(kampus1)
-                .title("BSI Square")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_kampus))
+                .title("Stasiun Bekasi")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_station))
         );
 
         LatLng kampus2 = new LatLng(-6.259806, 107.003073);
@@ -171,46 +167,23 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.btn1_stasiun_meutia) {
-            mTextMessage.setText("BSI Square - POM Bensin Permata \nRp 3.000");
-            requestDirection1();
-        }
-        else if (id == R.id.btn2_stasiun_meutia){
+       if (id == R.id.btn2_stasiun_meutia){
             requestDirection2();
-            mTextMessage.setText("POM Bensin Permata - UNISMA \nRp 9.000");
+            mTextMessage.setText("Stasiun Bekasi - UNISMA \nRp 5.000");
         }
-        else if (id == R.id.btn3_stasiun_meutia){
-            requestDirection3();
-            mTextMessage.setText("Transit Angkot \nDari 45 ke 15A");
-        }
+
         else if (id == R.id.btn4_stasiun_meutia){
             requestDirection4();
             mTextMessage.setText("Jalan Kaki / Angkot 11 (Rp. 1.000) \nUNISMA - BSI Cut Meutia");
         }
     }
 
-    public void requestDirection1() {
-        Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
-        GoogleDirection.withServerKey(serverKey)
-                .from(origin1)
-                .to(destination1)
-                .transportMode(TransportMode.TRANSIT)
-                .alternativeRoute(true)
-                .execute(this);
-        mGoogleMap.addMarker(new MarkerOptions()
-                .position(origin1)
-                .title("Angkot 45")
-                .snippet("depan BSI Square")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
-        );
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(origin1, 13));
-    }
 
     public void requestDirection2() {
-        Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn2, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
         GoogleDirection.withServerKey(serverKey)
                 .from(origin4)
-                .to(destination1)
+                .to(origin2)
                 .transportMode(TransportMode.TRANSIT)
                 .alternativeRoute(true)
                 .execute(this);
@@ -220,35 +193,26 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
                 .transportMode(TransportMode.TRANSIT)
                 .alternativeRoute(true)
                 .execute(this);
-        GoogleDirection.withServerKey(serverKey)
-                .from(origin4)
-                .to(origin2)
-                .transportMode(TransportMode.TRANSIT)
-                .alternativeRoute(true)
-                .execute(this);
 
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(destination2)
                 .title("Angkot K15")
-                .snippet("Depan Unismaa")
+                .snippet("Depan Unisma")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
-
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination2, 13));
-    }
-
-    public void requestDirection3() {
         mGoogleMap.addMarker(new MarkerOptions()
-                .position(destination1)
-                .title("Transit")
-                .snippet("POM Bensin Permata")
+                .position(origin4)
+                .title("Angkot K15")
+                .snippet("Depan Stasiun Bekasi")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_angkot))
         );
-        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination1, 13));
+
+        mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination2, 14));
     }
+
 
     public void requestDirection4() {
-        Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(btn4, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(origin3)
                 .title("Jalan Kaki / Angkot 11")
@@ -268,9 +232,7 @@ public class Stasiun_Meutia extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onDirectionSuccess(Direction direction, String rawBody) {
 
-        Snackbar.make(btn1, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         Snackbar.make(btn2, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
-        Snackbar.make(btn3, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
         Snackbar.make(btn4, "Status Permintaan : " + direction.getStatus(), Snackbar.LENGTH_SHORT).show();
 
         if (direction.isOK()) {
