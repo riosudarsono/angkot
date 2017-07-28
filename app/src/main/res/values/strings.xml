@@ -1,23 +1,6 @@
 <resources>
     <string name="app_name">Angkot Kampus Bekasi</string>
 
-    <string-array name="spinner_item_3">
-        <item>BSI Square</item>
-        <item>BSI Cut Meutia</item>
-        <item>Univ. Bhayangkara</item>
-        <item>Univ. Gunadarma</item>
-        <item>STMIK Bani Shaleh</item>
-        <item>Stasiun Bekasi</item>
-    </string-array>
-
-    <string-array name="spinner_item_4">
-        <item>BSI Square</item>
-        <item>BSI Cut Meutia</item>
-        <item>Univ. Bhayangkara</item>
-        <item>Univ. Gunadarma</item>
-        <item>STMIK Bani Shaleh</item>
-        <item>Stasiun Bekasi</item>
-    </string-array>
     <string name="title_activity_beranda">Angkot Kampus Bekasi</string>
     <string name="title_activity_st_square">ST. Bekasi - BSI Square</string>
 

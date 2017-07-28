@@ -14,9 +14,11 @@ import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import nusamandiri.maps3.Activity.RuteAngkot.Gundar_Meutia;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Meutia;
-import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
-import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara;
+import nusamandiri.maps3.Activity.RuteAngkot.Square_Unisma;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Meutia;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
 import nusamandiri.maps3.R;
 
 /**
@@ -35,7 +37,7 @@ public class BerandaFragment extends Fragment {
         View fragmentView = inflater.inflate(R.layout.fr_beranda, container, false);
 
         final MaterialSpinner spinner = (MaterialSpinner) fragmentView.findViewById(R.id.spinner3);
-        spinner.setItems("Pilih Kampus Pertama", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "STMIK Bani Shaleh", "Stasiun Bekasi");
+        spinner.setItems("Pilih Kampus Pertama", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "Universitas Islam 45", "Stasiun Bekasi","Terminal Bekasi");
         spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
@@ -47,7 +49,7 @@ public class BerandaFragment extends Fragment {
             }
         });
         final MaterialSpinner spinner1 = (MaterialSpinner) fragmentView.findViewById(R.id.spinner4);
-        spinner1.setItems("Pilih Kampus Kedua", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "STMIK Bani Shaleh", "Stasiun Bekasi");
+        spinner1.setItems("Pilih Kampus Kedua", "BSI Square", "BSI Cut Meutia", "Universitas Bhayangkara", "Universitas Gunadarma", "Universitas Islam 45", "Stasiun Bekasi","Terminal Bekasi");
         spinner1.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
@@ -82,6 +84,47 @@ public class BerandaFragment extends Fragment {
                         startActivity(MainActivity);
 
                     }
+                    else if (s3.equals("BSI Square") && s4.equals("Universitas Bhayangkara")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Ubhara.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Bhayangkara") && s4.equals("BSI Square")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Ubhara.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Square") && s4.equals("Universitas Islam 45")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Islam 45") && s4.equals("BSI Square")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Square_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Stasiun_Meutia.class);
+                        startActivity(MainActivity);
+
+                    } else if (s3.equals("BSI Cut Meutia") && s4.equals("Stasiun Bekasi")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Stasiun_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
                     else if (s3.equals("Stasiun Bekasi") && s4.equals("BSI Square")) {
 
                         Intent MainActivity
@@ -96,20 +139,7 @@ public class BerandaFragment extends Fragment {
                         startActivity(MainActivity);
 
                     }
-                    else if (s3.equals("BSI Square") && s4.equals("Universitas Bhayangkara")) {
 
-                            Intent MainActivity
-                                    = new Intent(getActivity(), Square_Ubhara.class);
-                            startActivity(MainActivity);
-
-                    }
-                    else if (s3.equals("Universitas Bhayangkara") && s4.equals("BSI Square")) {
-
-                        Intent MainActivity
-                                = new Intent(getActivity(), Square_Ubhara.class);
-                        startActivity(MainActivity);
-
-                    }
                     else if (s3.equals("Stasiun Bekasi") && s4.equals("Universitas Bhayangkara")) {
 
                         Intent MainActivity

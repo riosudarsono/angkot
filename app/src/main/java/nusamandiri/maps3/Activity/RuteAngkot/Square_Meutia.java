@@ -182,7 +182,7 @@ public class Square_Meutia extends AppCompatActivity implements OnMapReadyCallba
         }
         else if (id == R.id.btn3_square_meutia){
             requestDirection3();
-            mTextMessage.setText("Transit Angkot \nDari 45 ke 15A \nDari 15A ke 45");
+            mTextMessage.setText("Transit Angkot \nDari 45 ke 15A");
         }
         else if (id == R.id.btn4_square_meutia){
             requestDirection4();
