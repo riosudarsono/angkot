@@ -91,7 +91,10 @@
             android:name=".Activity.RuteAngkot.Square_Unisma"
             android:label="BSI Square - UNISMA"
             android:parentActivityName=".Activity.BerandaActivity"/>
-        <activity android:name=".Activity.RuteAngkot.Square_Gundar" />
+        <activity
+            android:name=".Activity.RuteAngkot.Square_Gundar"
+            android:label="BSI Square - GUNDAR"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity
             android:name=".Activity.RuteAngkot.Square_Meutia"
             android:label="BSI Square - BSI Cut Meutia"
