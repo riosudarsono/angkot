@@ -77,6 +77,20 @@ public class BerandaFragment extends Fragment {
                         Snackbar.make(view, "Silakan Pilih Tujuan", Snackbar.LENGTH_LONG).show();
 
                     }
+                    else if (s3.equals("Universitas Gunadarma") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Gundar_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Cut Meutia") && s4.equals("Universitas Gunadarma")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Gundar_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
                     else if (s3.equals("BSI Cut Meutia") && s4.equals("BSI Square")) {
 
                         Intent MainActivity
@@ -259,13 +273,7 @@ public class BerandaFragment extends Fragment {
                         startActivity(MainActivity);
 
                     }
-                    else if (s3.equals("Universitas Gunadarma") && s4.equals("BSI Cut Meutia")) {
 
-                        Intent MainActivity
-                                = new Intent(getActivity(), Gundar_Meutia.class);
-                        startActivity(MainActivity);
-
-                    }
                     else {
 
                         Snackbar.make(view, "Tujuan Tidak Boleh Sama", Snackbar.LENGTH_LONG).show();
