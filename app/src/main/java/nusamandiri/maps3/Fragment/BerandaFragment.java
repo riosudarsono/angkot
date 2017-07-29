@@ -22,6 +22,8 @@ import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Terminal;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Ubhara;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Unisma;
 import nusamandiri.maps3.Activity.RuteAngkot.Terminal_Gundar;
+import nusamandiri.maps3.Activity.RuteAngkot.Terminal_Meutia;
+import nusamandiri.maps3.Activity.RuteAngkot.Terminal_Square;
 import nusamandiri.maps3.R;
 
 /**
@@ -196,6 +198,34 @@ public class BerandaFragment extends Fragment {
 
                         Intent MainActivity
                                 = new Intent(getActivity(), Terminal_Gundar.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Terminal Bekasi") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Terminal_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Cut Meutia") && s4.equals("Terminal Bekasi")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Terminal_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Terminal Bekasi") && s4.equals("BSI Square")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Terminal_Square.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Square") && s4.equals("Terminal Bekasi")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Terminal_Square.class);
                         startActivity(MainActivity);
 
                     }
