@@ -70,9 +70,15 @@
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Square"
             android:label="BSI Square - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>/>
-        <activity android:name=".Activity.RuteAngkot.Terminal_Ubhara" />
-        <activity android:name=".Activity.RuteAngkot.Terminal_Unisma" />
+            android:parentActivityName=".Activity.BerandaActivity"/>
+        <activity
+            android:name=".Activity.RuteAngkot.Terminal_Ubhara"
+            android:label="UBHARA - Terminal"
+            android:parentActivityName=".Activity.BerandaActivity" />
+        <activity
+            android:name=".Activity.RuteAngkot.Terminal_Unisma"
+            android:label="UNISMA - Terminal"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Gundar"
             android:label="GUNDAR - Terminal"
