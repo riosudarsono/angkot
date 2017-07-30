@@ -180,7 +180,7 @@ public class Ubhara_Gundar extends AppCompatActivity implements OnMapReadyCallba
         }
         else if (id == R.id.btn2_ubhara_gundar){
             requestDirection2();
-            mTextMessage.setText("Angkot 26\ndepan Universitas Gunadarma - Pangkalan Angko26\nRp 3.000");
+            mTextMessage.setText("Angkot 26\ndepan Universitas Gunadarma - Pangkalan Angkot 26\nRp 3.000");
         }
         else if (id == R.id.btn3_ubhara_gundar){
             requestDirection3();
