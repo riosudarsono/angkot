@@ -17,6 +17,7 @@ import nusamandiri.maps3.Activity.RuteAngkot.Square_Gundar;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Meutia;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Ubhara;
 import nusamandiri.maps3.Activity.RuteAngkot.Square_Unisma;
+import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Gundar;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Meutia;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Square;
 import nusamandiri.maps3.Activity.RuteAngkot.Stasiun_Terminal;
@@ -145,6 +146,20 @@ public class BerandaFragment extends Fragment {
 
                         Intent MainActivity
                                 = new Intent(getActivity(), Square_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Stasiun Bekasi") && s4.equals("Universitas Gunadarma")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Stasiun_Gundar.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Gunadarma") && s4.equals("Stasiun Bekasi")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Stasiun_Gundar.class);
                         startActivity(MainActivity);
 
                     }

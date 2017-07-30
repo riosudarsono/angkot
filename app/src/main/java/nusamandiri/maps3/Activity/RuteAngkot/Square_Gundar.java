@@ -61,9 +61,8 @@ public class Square_Gundar extends AppCompatActivity implements OnMapReadyCallba
     private LatLng origin2 = new LatLng(-6.2492165,106.9703382);//depan gundar
     private LatLng destination2 = new LatLng(-6.2478832,106.9891995);//Pangkalan 26
 
-
-
     private LatLng origin3 = new LatLng(-6.2466019,106.9924656);//depan BCP
+    private LatLng destination3 = new LatLng(-6.233966, 106.994401);//depan walikota
 
     private LatLng origin4 = new LatLng(-6.236083, 107.000366);//depan Stasiun bekasi
 
@@ -266,9 +265,16 @@ public class Square_Gundar extends AppCompatActivity implements OnMapReadyCallba
 
     public void requestDirection4() {
         Snackbar.make(btn1, "Permintaan Sedang DIPROSES...", Snackbar.LENGTH_SHORT).show();
+
         GoogleDirection.withServerKey(serverKey)
                 .from(origin4)
-                .to(origin3)
+                .to(destination3)
+                .transportMode(TransportMode.TRANSIT)
+                .alternativeRoute(true)
+                .execute(this);
+        GoogleDirection.withServerKey(serverKey)
+                .from(origin3)
+                .to(destination3)
                 .transportMode(TransportMode.TRANSIT)
                 .alternativeRoute(true)
                 .execute(this);

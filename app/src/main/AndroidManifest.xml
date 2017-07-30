@@ -58,7 +58,10 @@
             android:name=".Activity.RuteAngkot.Stasiun_Unisma"
             android:label="Stasiun - UNISMA"
             android:parentActivityName=".Activity.BerandaActivity" />
-        <activity android:name=".Activity.RuteAngkot.Stasiun_Gundar" />
+        <activity
+            android:name=".Activity.RuteAngkot.Stasiun_Gundar"
+            android:label="Stasiun - GUNDAR"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Meutia"
             android:label="Stasiun - BSI Cut Meutia"
