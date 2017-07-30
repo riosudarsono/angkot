@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="nusamandiri.maps3.Activity.RuteAngkot.Ubhara_Gundar">
 
-</android.support.constraint.ConstraintLayout>
+    <fragment
+        android:id="@+id/mapfragment_ubhara_gundar"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btn1_ubhara_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angkot 09"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"/>
+
+
+        <Button
+            android:id="@+id/btn2_ubhara_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:text="Angkot 26"
+            android:layout_toRightOf="@+id/btn1_ubhara_gundar"
+            />
+
+
+        <Button
+            android:id="@+id/btn3_ubhara_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:text="Jalan Kaki"
+            android:layout_below="@id/btn1_ubhara_gundar"
+            />
+
+        <TextView
+            android:id="@+id/message_ubhara_gundar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn3_ubhara_gundar"
+            android:layout_marginLeft="7dp"
+            android:text="Total Ongkos Perjalanan \nRp. 10.000" />
+
+    </RelativeLayout>
+</RelativeLayout>

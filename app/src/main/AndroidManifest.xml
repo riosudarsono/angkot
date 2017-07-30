@@ -106,7 +106,10 @@
             android:name=".Activity.RuteAngkot.Ubhara_Unisma"
             android:label="UBHARA - UNISMA"
             android:parentActivityName=".Activity.BerandaActivity"/>
-        <activity android:name=".Activity.RuteAngkot.Ubhara_Gundar" />
+        <activity
+            android:name=".Activity.RuteAngkot.Ubhara_Gundar"
+            android:label="UBHARA - GUNDAR"
+            android:parentActivityName=".Activity.BerandaActivity"/>
         <activity android:name=".Activity.RuteAngkot.Ubhara_Meutia" />
         <activity android:name=".Activity.RuteAngkot.Unisma_Gundar" />
         <activity android:name=".Activity.RuteAngkot.Unisma_Meutia" />

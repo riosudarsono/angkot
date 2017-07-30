@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn3_stasiun_gundar"
             android:layout_marginLeft="7dp"
-            android:text="Total Ongkos Perjalanan \nRp. 10.000" />
+            android:text="Total Ongkos Perjalanan \nRp. 7.000" />
 
     </RelativeLayout>
 </RelativeLayout>
