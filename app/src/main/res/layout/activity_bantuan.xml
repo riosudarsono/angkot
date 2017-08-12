@@ -11,7 +11,111 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/icon_1" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/image_1"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:text="Pilih Tujuan Kampus Pertama dan Kedua, Lalu klik tombol Cari Rute Angkutan. Untuk Menampilkan Rute yang dicari" />
+
+            <ImageView
+                android:id="@+id/gambar_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@id/image_1"
+                app:srcCompat="@drawable/bantuan1" />
 
 
+
+            <ImageView
+                android:id="@+id/image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar_1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/icon_2" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/gambar_1"
+                android:layout_toRightOf="@id/image_2"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:text="Klik tombol Angkot, Transit atau Jalan Kaki untuk menampilkan rute dan keterangnya" />
+
+            <ImageView
+                android:id="@+id/gambar_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/text2"
+                android:layout_toRightOf="@id/image_2"
+                app:srcCompat="@drawable/bantuan2" />
+
+
+            <ImageView
+                android:id="@+id/image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambar_2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/icon_3" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/gambar_2"
+                android:layout_toRightOf="@id/image_3"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:text="Klik icon lokasi Angkot atau Kampus pada peta untuk menampilkan keterangannya" />
+
+            <ImageView
+                android:id="@+id/gambar_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/text3"
+                android:layout_toRightOf="@id/image_3"
+                app:srcCompat="@drawable/bantuan3" />
+
+            <ImageView
+                android:id="@+id/gambar_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/gambar_3"
+                android:layout_below="@id/text3"
+                app:srcCompat="@drawable/bantuan4" />
+        </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
