@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="nusamandiri.maps3.Activity.TentangActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_tentang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/icon_tentang" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image_tentang"
+            android:layout_marginTop="3dp"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"
+            android:text="VERSION : 0. 0.1" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/version"
+            android:layout_marginTop="1dp"
+            android:textSize="17dp"
+            android:textColor="@color/colorWhite"
+            android:text="Mas.Riosudarsono@gmail.com" />
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

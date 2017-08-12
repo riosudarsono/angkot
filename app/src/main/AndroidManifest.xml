@@ -122,9 +122,11 @@
             android:parentActivityName=".Activity.BerandaActivity"/>
         <activity
             android:name=".Activity.TentangActivity"
-            android:parentActivityName=".Activity.BerandaActivity" />
+            android:parentActivityName=".Activity.BerandaActivity"
+            />
         <activity
             android:name=".Activity.BantuanActivity"
+            android:label="Bantuan"
             android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.DetailKampus.BSI_Square"
