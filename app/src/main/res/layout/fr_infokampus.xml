@@ -21,7 +21,7 @@
         android:layout_marginTop="5dp">
 
         <TextView
-            android:id="@+id/judul"
+            android:id="@+id/judul_square"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -31,36 +31,36 @@
             android:textStyle="bold"/>
 
         <ImageView
-            android:id="@+id/icon_item"
+            android:id="@+id/icon_item_square"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/judul"
+            android:layout_below="@id/judul_square"
             android:src="@drawable/bsi125"/>
 
         <TextView
-            android:id="@+id/alamat"
+            android:id="@+id/alamat_square"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_below="@id/icon_item"
+            android:layout_below="@id/icon_item_square"
             android:text="Alamat : Jl. Raya Kaliabang No. 8, Perwira, Bekasi Utara"/>
 
         <TextView
-            android:id="@+id/telpon"
+            android:id="@+id/telpon_square"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_below="@id/alamat"
+            android:layout_below="@id/alamat_square"
             android:text="Telp      : (021) 88985613"/>
 
         <Button
             android:id="@+id/detail_square"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/telpon"
+            android:layout_below="@id/telpon_square"
             android:layout_centerHorizontal="true"
             android:background="@drawable/bg_button"
             android:layout_marginLeft="10dp"
@@ -80,7 +80,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/judul"
+                    android:id="@+id/judul_ubhara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -90,36 +90,36 @@
                     android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/icon_item"
+                    android:id="@+id/icon_item_ubhara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/judul"
+                    android:layout_below="@id/judul_ubhara"
                     android:src="@drawable/ubhara125"/>
 
                 <TextView
-                    android:id="@+id/alamat"
+                    android:id="@+id/alamat_ubhara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/icon_item"
+                    android:layout_below="@id/icon_item_ubhara"
                     android:text="Alamat : Jl. Raya Perjuangan, Bekasi Utara, Kota Bekasi"/>
 
                 <TextView
-                    android:id="@+id/telpon"
+                    android:id="@+id/telpon_ubhara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/alamat"
+                    android:layout_below="@id/alamat_ubhara"
                     android:text="Telp      : (021) 88955882"/>
 
                 <Button
                     android:id="@+id/detail_ubhara"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/telpon"
+                    android:layout_below="@id/telpon_ubhara"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_button"
                     android:layout_marginLeft="10dp"
@@ -139,7 +139,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/judul"
+                    android:id="@+id/judul_unisma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -149,36 +149,36 @@
                     android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/icon_item"
+                    android:id="@+id/icon_item_unisma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/judul"
+                    android:layout_below="@id/judul_unisma"
                     android:src="@drawable/unisma125"/>
 
                 <TextView
-                    android:id="@+id/alamat"
+                    android:id="@+id/alamat_unisma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/icon_item"
+                    android:layout_below="@id/icon_item_unisma"
                     android:text="Alamat : Jl. Cut Meutia No.83, Bekasi"/>
 
                 <TextView
-                    android:id="@+id/telpon"
+                    android:id="@+id/telpon_unisma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/alamat"
+                    android:layout_below="@id/alamat_unisma"
                     android:text="Telp      : (021) 8808853"/>
 
                 <Button
                     android:id="@+id/detail_unisma"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/telpon"
+                    android:layout_below="@id/telpon_unisma"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_button"
                     android:layout_marginLeft="10dp"
@@ -198,7 +198,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/judul"
+                    android:id="@+id/judul_gundar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -208,36 +208,36 @@
                     android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/icon_item"
+                    android:id="@+id/icon_item_gundar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/judul"
+                    android:layout_below="@id/judul_gundar"
                     android:src="@drawable/gundar125"/>
 
                 <TextView
-                    android:id="@+id/alamat"
+                    android:id="@+id/alamat_gundar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/icon_item"
+                    android:layout_below="@id/icon_item_gundar"
                     android:text="Alamat : Jl. KH. Noer Ali, Kalimalang, Bekasi"/>
 
                 <TextView
-                    android:id="@+id/telpon"
+                    android:id="@+id/telpon_gundar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/alamat"
+                    android:layout_below="@id/alamat_gundar"
                     android:text="Telp      : (021) 88860117"/>
 
                 <Button
                     android:id="@+id/detail_gundar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/telpon"
+                    android:layout_below="@id/telpon_gundar"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_button"
                     android:layout_marginLeft="10dp"
@@ -257,7 +257,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/judul"
+                    android:id="@+id/judul_meutia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -267,36 +267,36 @@
                     android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/icon_item"
+                    android:id="@+id/icon_item_meutia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/judul"
+                    android:layout_below="@id/judul_meutia"
                     android:src="@drawable/bsi125"/>
 
                 <TextView
-                    android:id="@+id/alamat"
+                    android:id="@+id/alamat_meutia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/icon_item"
+                    android:layout_below="@id/icon_item_meutia"
                     android:text="Alamat : Jl. Cut Meutia No.88, Bekasi"/>
 
                 <TextView
-                    android:id="@+id/telpon"
+                    android:id="@+id/telpon_meutia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_below="@id/alamat"
+                    android:layout_below="@id/alamat_meutia"
                     android:text="Telp      : (021) 82425634"/>
 
                 <Button
                     android:id="@+id/detail_meutia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/telpon"
+                    android:layout_below="@id/telpon_meutia"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_button"
                     android:layout_marginLeft="10dp"
