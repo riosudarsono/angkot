@@ -37,14 +37,24 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".Activity.BerandaActivity"
+            android:name=".Activity.SplashActivity"
             android:label="@string/title_activity_beranda"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Splashscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            </activity>
+
+        <activity
+            android:name=".Activity.BerandaActivity"
+            android:label="@string/title_activity_beranda"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Square"
@@ -61,19 +71,19 @@
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Gundar"
             android:label="Stasiun - GUNDAR"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Meutia"
             android:label="Stasiun - BSI Cut Meutia"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Stasiun_Terminal"
             android:label="Stasiun - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Square"
             android:label="BSI Square - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Ubhara"
             android:label="UBHARA - Terminal"
@@ -81,49 +91,48 @@
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Unisma"
             android:label="UNISMA - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Gundar"
             android:label="GUNDAR - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Terminal_Meutia"
             android:label="BSI Cut Meutia - Terminal"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Square_Unisma"
             android:label="BSI Square - UNISMA"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Square_Gundar"
             android:label="BSI Square - GUNDAR"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Square_Meutia"
             android:label="BSI Square - BSI Cut Meutia"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Ubhara_Unisma"
             android:label="UBHARA - UNISMA"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Ubhara_Gundar"
             android:label="UBHARA - GUNDAR"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.RuteAngkot.Ubhara_Meutia"
             android:label="UBHARA - BSI Cut Meutia"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity android:name=".Activity.RuteAngkot.Unisma_Gundar" />
         <activity android:name=".Activity.RuteAngkot.Unisma_Meutia" />
         <activity
             android:name=".Activity.RuteAngkot.Gundar_Meutia"
             android:label="GUNDAR - BSI Cut Meutia"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.TentangActivity"
-            android:parentActivityName=".Activity.BerandaActivity"
-            />
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.BantuanActivity"
             android:label="Bantuan"
@@ -131,23 +140,24 @@
         <activity
             android:name=".Activity.DetailKampus.BSI_Square"
             android:label="BSI SQUARE"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.DetailKampus.Universitas_Bhayangkara"
             android:label="UNIV. BHAYANGKARA"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.DetailKampus.Universitas_Islam_45"
             android:label="UNIV. ISLAM 45"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.DetailKampus.BSI_CutMeutia"
             android:label="BSI CUT MEUTIA"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
         <activity
             android:name=".Activity.DetailKampus.Universitas_Gunadarma"
             android:label="UNIV. GUNADARMA"
-            android:parentActivityName=".Activity.BerandaActivity"/>
+            android:parentActivityName=".Activity.BerandaActivity" />
+
     </application>
 
 </manifest>
