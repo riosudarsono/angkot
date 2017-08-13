@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="nusamandiri.maps3.Activity.RuteAngkot.Unisma_Gundar">
 
-</android.support.constraint.ConstraintLayout>
+    <fragment
+        android:id="@+id/mapfragment_unisma_gundar"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1_unisma_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:text="Angkot 26" />
+
+        <Button
+            android:id="@+id/btn2_unisma_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angkot 25"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/btn1_unisma_gundar" />
+
+        <Button
+            android:id="@+id/btn3_unisma_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Kaki 1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/btn2_unisma_gundar" />
+
+        <Button
+            android:id="@+id/btn4_unisma_gundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:text="Jalan Kaki 2"
+            android:layout_below="@id/btn2_unisma_gundar"
+            android:layout_toRightOf="@+id/btn3_unisma_gundar"
+            />
+
+
+        <TextView
+            android:id="@+id/message_unisma_gundar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn3_unisma_gundar"
+            android:layout_marginLeft="7dp"
+            android:text="Total Ongkos Perjalanan \nRp. 7.000" />
+
+    </RelativeLayout>
+</RelativeLayout>
