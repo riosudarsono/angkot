@@ -30,6 +30,7 @@ import nusamandiri.maps3.Activity.RuteAngkot.Terminal_Ubhara;
 import nusamandiri.maps3.Activity.RuteAngkot.Terminal_Unisma;
 import nusamandiri.maps3.Activity.RuteAngkot.Ubhara_Gundar;
 import nusamandiri.maps3.Activity.RuteAngkot.Ubhara_Meutia;
+import nusamandiri.maps3.Activity.RuteAngkot.Ubhara_Unisma;
 import nusamandiri.maps3.R;
 
 /**
@@ -330,6 +331,48 @@ public class BerandaFragment extends Fragment {
 
                         Intent MainActivity
                                 = new Intent(getActivity(), Ubhara_Meutia.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Bhayangkara") && s4.equals("Universitas Islam 45")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Islam 45") && s4.equals("Universitas Bhayangkara")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Gunadarma") && s4.equals("Universitas Islam 45")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Gundar.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Islam 45") && s4.equals("Universitas Gunadarma")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Gundar.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("BSI Cut Meutia") && s4.equals("Universitas Islam 45")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Unisma.class);
+                        startActivity(MainActivity);
+
+                    }
+                    else if (s3.equals("Universitas Islam 45") && s4.equals("BSI Cut Meutia")) {
+
+                        Intent MainActivity
+                                = new Intent(getActivity(), Ubhara_Unisma.class);
                         startActivity(MainActivity);
 
                     }
